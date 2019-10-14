@@ -75,7 +75,7 @@
 	</select>
 </div>
 
-        <a class="btn btn-lg" href="/storybooks-sverige/stories/nb" class="button">Tillbaka till listan med berättelser</a><br><br>
+        <a class="btn btn-lg" href="/storybooks-sverige/stories/nb">Tillbaka till listan med berättelser</a><br><br>
 
 <div class="columns" id="text01">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0087/01.jpg"></div>
@@ -83,22 +83,22 @@
 		<h1><span class="def">Jeg liker å lese</span>
 			<span class="l1">Jag gillar att läsa!</span>
 			<span class="l2">I like to read!</span>
-			<div class="btn-group">
-				<a href="#text02" class="btn btn-lg" title="Nästa sida"><i class="icon-arrow-down"></i></a>
-				<button class="btn btn-lg" id="playbutton01" onclick="playpause('01')" title="Spela/paus"><i class="icon-volume-up"></i></button>
-				<audio id="audio01" onended="resetbutton('01')" src="https://globalstorybooks.net/media/audio/nb/0087/mp3/01.mp3"></audio>
-				<button onclick="switchlang('nb,sv','sv,en,nb')" class="btn btn-lg lang-primary" title="Byt mellan norska (bokmål) och svenska">sv</button>
-				<button style="display:none" onclick="switchlang('nb,en','sv,en,nb')" class="btn btn-lg lang-secondary" title="Byt mellan svenska norska (bokmål) och engelska">en</button>
-			</div>
 		</h1>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Skriven av"><img class="cover-icon" src="/storybooks-sverige/css/pencil.svg" alt="Skriven av" width="38px"></span> Letta Machoga</h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Illustrerad av"><img class="cover-icon" src="/storybooks-sverige/css/art.svg" alt="Illustrerad av" width="38px"></span> Wiehan de Jager</h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Översatt av"><img class="cover-icon" src="/storybooks-sverige/css/global.svg" alt="Översatt av" width="38px"></span> Finn Stranger-Johannessen</h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Uppläst av"><img class="cover-icon" src="/storybooks-sverige/css/megaphone.svg" alt="Uppläst av" width="38px"></span> Espen Stranger-Johannessen</h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Språk"><img class="cover-icon" src="/storybooks-sverige/css/language.svg" alt="Språk" width="38px"></span> <a href="/storybooks-sverige/stories/nb">norska (bokmål)</a></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Nivå"><img class="cover-icon" src="/storybooks-sverige/css/level.svg" alt="Nivå" width="38px"></span> <a href="/storybooks-sverige/stories/nb/level1">Nivå 1</a></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Berätta hela historien"><img class="cover-icon" src="/storybooks-sverige/css/speaker.svg" alt="Berätta hela historien" width="38px"></span> <audio id="audioplayer" controls><source src="https://globalstorybooks.net/media/audio/nb/0087/nb-0087_read.mp3" type="audio/mpeg"></audio></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Spela upp historien (beta)"><img id="autoplay_icon" class="cover-icon" src="https://dohliam.github.io/elegant-circles/svg/play.svg" alt="Spela upp historien" style="cursor:pointer" width="38px" onclick="autoplay()"></span></h3>
+		<div class="btn-group cover-buttons">
+			<a href="#text02" class="btn btn-lg" title="Nästa sida"><i class="icon-arrow-down"></i></a>
+			<button class="btn btn-lg" id="playbutton01" onclick="playpause('01')" title="Spela/paus"><i class="icon-volume-up"></i></button>
+			<audio id="audio01" onended="resetbutton('01')" src="https://globalstorybooks.net/media/audio/nb/0087/mp3/01.mp3"></audio>
+			<button onclick="switchlang('nb,sv','sv,en,nb')" class="btn btn-lg lang-primary" title="Byt mellan norska (bokmål) och svenska">sv</button>
+			<button style="display:none" onclick="switchlang('nb,en','sv,en,nb')" class="btn btn-lg lang-secondary" title="Byt mellan svenska norska (bokmål) och engelska">en</button>
+		</div>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Skriven av"><img class="cover-icon" src="/storybooks-sverige/css/pencil.svg" alt="Skriven av"></span> Letta Machoga</h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Illustrerad av"><img class="cover-icon" src="/storybooks-sverige/css/art.svg" alt="Illustrerad av"></span> Wiehan de Jager</h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Översatt av"><img class="cover-icon" src="/storybooks-sverige/css/global.svg" alt="Översatt av"></span> Finn Stranger-Johannessen</h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Uppläst av"><img class="cover-icon" src="/storybooks-sverige/css/megaphone.svg" alt="Uppläst av"></span> Espen Stranger-Johannessen</h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Språk"><img class="cover-icon" src="/storybooks-sverige/css/language.svg" alt="Språk"></span> <a href="/storybooks-sverige/stories/nb">norska (bokmål)</a></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Nivå"><img class="cover-icon" src="/storybooks-sverige/css/level.svg" alt="Nivå"></span> <a href="/storybooks-sverige/stories/nb/level1">Nivå 1</a></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Berätta hela historien"><img class="cover-icon" src="/storybooks-sverige/css/speaker.svg" alt="Berätta hela historien"></span> <audio id="audioplayer" controls><source src="https://globalstorybooks.net/media/audio/nb/0087/nb-0087_read.mp3" type="audio/mpeg"></audio></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Spela upp historien (beta)"><img id="autoplay_icon" class="cover-icon" src="https://dohliam.github.io/elegant-circles/svg/play.svg" alt="Spela upp historien" style="cursor:pointer" onclick="autoplay()"></span></h3>
 	</div>
 </div>
 <hr>
@@ -340,7 +340,7 @@ read to myself!
 		<h5><a href="/storybooks-sverige/stories/nb/level1">Nivå 1</a></h5>
 		<h5>Källa: <a href="https://africanstorybook.org/reader.php?id=10547" target="_blank">I like to read</a> från <a href="https://africanstorybook.org/">African Storybook</a></h5>
 
-		<left><a rel="license" href="https://creativecommons.org/licenses/by/3.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/3.0/88x31.png" /></a><br />Släppt under <a rel="license" href="https://creativecommons.org/licenses/by/3.0/">Creative Commons Erkännande 3.0 Internationell Licens</a>.</left>
+		<div><a rel="license" href="https://creativecommons.org/licenses/by/3.0/deed.sv" target="_blank"><img alt="Creative Commons Licens" style="border-width:0" src="https://i.creativecommons.org/l/by/3.0/88x31.png" /></a><br />Släppt under <a rel="license" href="https://creativecommons.org/licenses/by/3.0/deed.sv" target="_blank">Creative Commons Erkännande 3.0 Internationell Licens</a>.</div>
 
 	</div>
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12">
