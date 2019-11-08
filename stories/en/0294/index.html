@@ -16,6 +16,7 @@
 	<meta name="description" content="Berättelser för Sverige är ett gratis utbildningsmaterial som främjar läs- och språkinlärning i hemmet, skolan och samhället. Hela 40 berättelser från African Storybook finns tillgängliga med text och ljud på svenska och de mest vanligt förekommande språken i Sverige.
 ">
 	<link rel="stylesheet" href="/storybooks-sverige/css/spectre.min.css">
+	<link rel="stylesheet" href="/storybooks-sverige/css/gsn.min.css">
 	<link rel="stylesheet" href="/storybooks-sverige/css/fontello.min.css">
 	<link rel="canonical" href="https://global-asp.github.io//storybooks-sverige/stories/en/0294/">
 	<link rel="alternate" type="application/rss+xml" title="Berättelser för Sverige" href="/storybooks-sverige">
@@ -87,17 +88,17 @@
 		<div class="btn-group cover-buttons">
 			<a href="#text02" class="btn btn-lg" title="Nästa sida"><i class="icon-arrow-down"></i></a>
 			<button class="btn btn-lg" id="playbutton01" onclick="playpause('01')" title="Spela/paus"><i class="icon-volume-up"></i></button>
-			<audio id="audio01" onended="resetbutton('01')" src="https://globalstorybooks.net/media/audio/en/0294/mp3/01.mp3"></audio>
+			<audio id="audio01" onended="resetbutton('01')" src="/storybooks-sverige/audio/en/0294/mp3/01.mp3"></audio>
 			<button onclick="switchlang('en,sv','sv,en,en')" class="btn btn-lg lang-primary" title="Byt mellan engelska och svenska">sv</button>
 			<button style="display:none" onclick="switchlang('en,en','sv,en,en')" class="btn btn-lg lang-secondary" title="Byt mellan svenska engelska och engelska">en</button>
 		</div>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Skriven av"><img class="cover-icon" src="/storybooks-sverige/css/pencil.svg" alt="Skriven av"></span> Ursula Nafula</h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Illustrerad av"><img class="cover-icon" src="/storybooks-sverige/css/art.svg" alt="Illustrerad av"></span> Catherine Groenewald</h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Uppläst av"><img class="cover-icon" src="/storybooks-sverige/css/megaphone.svg" alt="Uppläst av"></span> Darshan Soni</h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Språk"><img class="cover-icon" src="/storybooks-sverige/css/language.svg" alt="Språk"></span> <a href="/storybooks-sverige/stories/en">engelska</a></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Nivå"><img class="cover-icon" src="/storybooks-sverige/css/level.svg" alt="Nivå"></span> <a href="/storybooks-sverige/stories/en/level4">Nivå 4</a></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Berätta hela historien"><img class="cover-icon" src="/storybooks-sverige/css/speaker.svg" alt="Berätta hela historien"></span> <audio id="audioplayer" controls><source src="https://globalstorybooks.net/media/audio/en/0294/en-0294_grandma.mp3" type="audio/mpeg"></audio></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Spela upp historien (beta)"><img id="autoplay_icon" class="cover-icon" src="https://dohliam.github.io/elegant-circles/svg/play.svg" alt="Spela upp historien" style="cursor:pointer" onclick="autoplay()"></span></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Skriven av"><img class="cover-icon cover-icon-text" src="/storybooks-sverige/css/pencil.svg" alt="Skriven av"></span> Ursula Nafula</h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Illustrerad av"><img class="cover-icon cover-icon-text" src="/storybooks-sverige/css/art.svg" alt="Illustrerad av"></span> Catherine Groenewald</h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Uppläst av"><img class="cover-icon cover-icon-text" src="/storybooks-sverige/css/megaphone.svg" alt="Uppläst av"></span> Darshan Soni</h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Språk"><img class="cover-icon cover-icon-text" src="/storybooks-sverige/css/language.svg" alt="Språk"></span> <a href="/storybooks-sverige/stories/en">engelska</a></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Nivå"><img class="cover-icon cover-icon-text" src="/storybooks-sverige/css/level.svg" alt="Nivå"></span> <a href="/storybooks-sverige/stories/en/level4">Nivå 4</a></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Berätta hela historien"><img class="cover-icon cover-icon-audio" src="/storybooks-sverige/css/speaker.svg" alt="Berätta hela historien"></span> <audio id="audioplayer" controls><source src="/0294/en-0294_grandma.mp3" type="audio/mpeg"></audio></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Spela upp historien (beta)"><img id="autoplay_icon" class="cover-icon cover-icon-text" src="https://dohliam.github.io/elegant-circles/svg/play.svg" alt="Spela upp historien" style="cursor:pointer" onclick="autoplay()"></span></h3>
 	</div>
 </div>
 <hr>
@@ -151,7 +152,7 @@ Next to the basket, there were several banana leaves that Grandma turned from ti
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
-	En dag såg jag en stor korg gjord av strå som stod i solen utanför mormors hus. När jag frågade vad den var till för var det enda svaret jag fick: ”Det är min magiska korg.” Näst intill korgen fanns det flera bananblad som mormor vände på då och då. Jag var nyfiken. ”Vad är bladen till för, mormor?” frågade jag. Det enda svaret jag fick var: ”Det där är mina magiska blad. ”
+	En dag såg jag en stor korg gjord av strå som stod i solen utanför mormors hus. När jag frågade vad den var till för var det enda svaret jag fick: “Det är min magiska korg.” Näst intill korgen fanns det flera bananblad som mormor vände på då och då. Jag var nyfiken. “Vad är bladen till för, mormor?” frågade jag. Det enda svaret jag fick var: “Det där är mina magiska blad. ”
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	One day I saw a big straw basket placed in the sun outside Grandma’s house. When I asked what it was for, the only answer I got was, “It’s my magic basket.”
@@ -185,7 +186,7 @@ Next to the basket, there were several banana leaves that Grandma turned from ti
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
-	Det var så intressant att betrakta mormor, bananerna och den stora stråkorgen. Men mormor skickade iväg mig till min mamma på ett ärende. ”Mormor, snälla låt mig titta på medan du förbereder…”. ”Var inte envis barn, gör som jag säger!” insisterade hon.
+	Det var så intressant att betrakta mormor, bananerna och den stora stråkorgen. Men mormor skickade iväg mig till min mamma på ett ärende. “Mormor, snälla låt mig titta på medan du förbereder…” “Var inte envis barn, gör som jag säger!” insisterade hon.
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	It was so interesting watching Grandma, the bananas, the banana leaves and the big straw basket. But Grandma sent me off to my mother on an errand.
@@ -221,7 +222,7 @@ But the only answer I got was, “They are in my magic place.” It was so disap
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
-	När jag kom tillbaka satt mormor på utsidan men ingenstans fanns korgen eller bananerna. ”Mormor, var är korgen med alla bananerna…”. Men det enda svaret jag fick var: ”De är på min magiska plats.” Jag blev så besviken!
+	När jag kom tillbaka satt mormor på utsidan men ingenstans fanns korgen eller bananerna. “Mormor, var är korgen med alla bananerna…” Men det enda svaret jag fick var: “De är på min magiska plats.” Jag blev så besviken!
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	When I returned, Grandma was sitting outside but with neither the basket nor the bananas.
@@ -289,7 +290,7 @@ Her question made me realise that I was still smiling at the discovery of her ma
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
-	Mormors röst fick mig att rycka till när hon ropade: ”Vad gör du? Skynda dig på och hämta käppen.” Jag skyndande mig ut med hennes käpp. ”Vad ler du åt?” frågade mormor. Hennes fråga fick mig att inse att jag log eftersom jag hade hittat hennes magiska ställe.
+	Mormors röst fick mig att rycka till när hon ropade: “Vad gör du? Skynda dig på och hämta käppen.” Jag skyndande mig ut med hennes käpp. “Vad ler du åt?” frågade mormor. Hennes fråga fick mig att inse att jag log eftersom jag hade hittat hennes magiska ställe.
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	Grandma’s voice startled me when she called, “What are you doing? Hurry up and bring me the stick.”

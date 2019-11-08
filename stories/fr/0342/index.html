@@ -16,6 +16,7 @@
 	<meta name="description" content="Berättelser för Sverige är ett gratis utbildningsmaterial som främjar läs- och språkinlärning i hemmet, skolan och samhället. Hela 40 berättelser från African Storybook finns tillgängliga med text och ljud på svenska och de mest vanligt förekommande språken i Sverige.
 ">
 	<link rel="stylesheet" href="/storybooks-sverige/css/spectre.min.css">
+	<link rel="stylesheet" href="/storybooks-sverige/css/gsn.min.css">
 	<link rel="stylesheet" href="/storybooks-sverige/css/fontello.min.css">
 	<link rel="canonical" href="https://global-asp.github.io//storybooks-sverige/stories/fr/0342/">
 	<link rel="alternate" type="application/rss+xml" title="Berättelser för Sverige" href="/storybooks-sverige">
@@ -87,18 +88,18 @@
 		<div class="btn-group cover-buttons">
 			<a href="#text02" class="btn btn-lg" title="Nästa sida"><i class="icon-arrow-down"></i></a>
 			<button class="btn btn-lg" id="playbutton01" onclick="playpause('01')" title="Spela/paus"><i class="icon-volume-up"></i></button>
-			<audio id="audio01" onended="resetbutton('01')" src="https://globalstorybooks.net/media/audio/fr/0342/mp3/01.mp3"></audio>
+			<audio id="audio01" onended="resetbutton('01')" src="/storybooks-sverige/audio/fr/0342/mp3/01.mp3"></audio>
 			<button onclick="switchlang('fr,sv','sv,en,fr')" class="btn btn-lg lang-primary" title="Byt mellan franska och svenska">sv</button>
 			<button style="display:none" onclick="switchlang('fr,en','sv,en,fr')" class="btn btn-lg lang-secondary" title="Byt mellan svenska franska och engelska">en</button>
 		</div>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Skriven av"><img class="cover-icon" src="/storybooks-sverige/css/pencil.svg" alt="Skriven av"></span> Adelheid Marie Bwire</h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Illustrerad av"><img class="cover-icon" src="/storybooks-sverige/css/art.svg" alt="Illustrerad av"></span> Melany Pietersen</h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Översatt av"><img class="cover-icon" src="/storybooks-sverige/css/global.svg" alt="Översatt av"></span> Suzanne Alban, Translators without Borders</h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Uppläst av"><img class="cover-icon" src="/storybooks-sverige/css/megaphone.svg" alt="Uppläst av"></span> Alexandra Danahy</h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Språk"><img class="cover-icon" src="/storybooks-sverige/css/language.svg" alt="Språk"></span> <a href="/storybooks-sverige/stories/fr">franska</a></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Nivå"><img class="cover-icon" src="/storybooks-sverige/css/level.svg" alt="Nivå"></span> <a href="/storybooks-sverige/stories/fr/level2">Nivå 2</a></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Berätta hela historien"><img class="cover-icon" src="/storybooks-sverige/css/speaker.svg" alt="Berätta hela historien"></span> <audio id="audioplayer" controls><source src="https://globalstorybooks.net/media/audio/fr/0342/fr-0342_punishment.mp3" type="audio/mpeg"></audio></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Spela upp historien (beta)"><img id="autoplay_icon" class="cover-icon" src="https://dohliam.github.io/elegant-circles/svg/play.svg" alt="Spela upp historien" style="cursor:pointer" onclick="autoplay()"></span></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Skriven av"><img class="cover-icon cover-icon-text" src="/storybooks-sverige/css/pencil.svg" alt="Skriven av"></span> Adelheid Marie Bwire</h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Illustrerad av"><img class="cover-icon cover-icon-text" src="/storybooks-sverige/css/art.svg" alt="Illustrerad av"></span> Melany Pietersen</h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Översatt av"><img class="cover-icon cover-icon-text" src="/storybooks-sverige/css/global.svg" alt="Översatt av"></span> Suzanne Alban, Translators without Borders</h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Uppläst av"><img class="cover-icon cover-icon-text" src="/storybooks-sverige/css/megaphone.svg" alt="Uppläst av"></span> Monique Bournot-Trites</h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Språk"><img class="cover-icon cover-icon-text" src="/storybooks-sverige/css/language.svg" alt="Språk"></span> <a href="/storybooks-sverige/stories/fr">franska</a></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Nivå"><img class="cover-icon cover-icon-text" src="/storybooks-sverige/css/level.svg" alt="Nivå"></span> <a href="/storybooks-sverige/stories/fr/level2">Nivå 2</a></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Berätta hela historien"><img class="cover-icon cover-icon-audio" src="/storybooks-sverige/css/speaker.svg" alt="Berätta hela historien"></span> <audio id="audioplayer" controls><source src="/0342/fr-0342_punishment.mp3" type="audio/mpeg"></audio></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Spela upp historien (beta)"><img id="autoplay_icon" class="cover-icon cover-icon-text" src="https://dohliam.github.io/elegant-circles/svg/play.svg" alt="Spela upp historien" style="cursor:pointer" onclick="autoplay()"></span></h3>
 	</div>
 </div>
 <hr>
@@ -106,9 +107,7 @@
 <div id="text02" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0342/02.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3>
-	Un jour, Maman a
-ramassé beaucoup de
-fruits.
+	Un jour, Maman a ramassé beaucoup de fruits.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3>
@@ -137,16 +136,13 @@ lot of fruit.
 <div id="text03" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0342/03.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3>
-	Nous lui demandons&nbsp;: «&nbsp;Pouvons-nous manger
-des fruits&nbsp;?&nbsp;»
-Maman répond&nbsp;: «&nbsp;Nous
-les mangerons ce soir.&nbsp;»
+	Nous lui demandons&nbsp;: «&nbsp;Pouvons-nous manger des fruits&nbsp;?&nbsp;» Maman répond&nbsp;: «&nbsp;Nous les mangerons ce soir.&nbsp;»
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3>
-	”När kan vi få lite frukt?” frågar vi.
+	“När kan vi få lite frukt?” frågar vi.
 
-”Vi ska äta frukten ikväll”, säger mamma.
+“Vi ska äta frukten ikväll”, säger mamma.
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3>
 	“When can we have
@@ -173,10 +169,7 @@ tonight,” says mama.
 <div id="text04" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0342/04.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3>
-	Mon frère Rahim est
-glouton.
-Il goûte tous les fruits.
-Il en mange beaucoup.
+	Mon frère Rahim est glouton. Il goûte tous les fruits. Il en mange beaucoup.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3>
@@ -206,15 +199,11 @@ fruit. He eats a lot of it.
 <div id="text05" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0342/05.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3>
-	«&nbsp;Regarde ce qu’a fait
-Rahim&nbsp;!&nbsp;», crie mon
-petit frère.
-Et moi, je dis&nbsp;: «&nbsp;Rahim
-est méchant et égoïste.&nbsp;»
+	«&nbsp;Regarde ce qu’a fait Rahim&nbsp;!&nbsp;», crie mon petit frère. Et moi, je dis&nbsp;: «&nbsp;Rahim est méchant et égoïste.&nbsp;»
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3>
-	”Titta vad Rahim har gjort!” ropar min lillebror. ”Rahim är olydig och självisk”, säger jag.
+	“Titta vad Rahim har gjort!” ropar min lillebror. “Rahim är olydig och självisk”, säger jag.
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3>
 	“Look at what Rahim
@@ -242,8 +231,7 @@ say.
 <div id="text06" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0342/06.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3>
-	Maman est fâchée
-contre Rahim.
+	Maman est fâchée contre Rahim.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3>
@@ -272,11 +260,7 @@ Rahim.
 <div id="text07" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0342/07.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3>
-	Nous aussi, nous
-sommes fâchés contre
-Rahim.
-Mais Rahim ne regrette
-rien.
+	Nous aussi, nous sommes fâchés contre Rahim. Mais Rahim ne regrette rien.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3>
@@ -306,13 +290,11 @@ sorry.
 <div id="text08" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0342/08.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3>
-	«&nbsp;Tu ne vas pas punir
-Rahim&nbsp;?&nbsp;», demande
-Petit Frère.
+	«&nbsp;Tu ne vas pas punir Rahim&nbsp;?&nbsp;», demande Petit Frère.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3>
-	”Ska du inte straffa Rahim?” frågar lillebror.
+	“Ska du inte straffa Rahim?” frågar lillebror.
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3>
 	“Aren’t you going to
@@ -338,13 +320,11 @@ little brother.
 <div id="text09" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0342/09.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3>
-	«&nbsp;Rahim&nbsp;», prévient
-maman, «&nbsp;tu le
-regretteras bientôt.&nbsp;»
+	«&nbsp;Rahim&nbsp;», prévient maman, «&nbsp;tu le regretteras bientôt.&nbsp;»
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3>
-	”Rahim, du kommer snart ångra dig”, varnar mamma.
+	“Rahim, du kommer snart ångra dig”, varnar mamma.
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3>
 	“Rahim, soon you will
@@ -369,8 +349,7 @@ be sorry,” warns mama.
 <div id="text10" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0342/10.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3>
-	Rahim ne se sent pas
-bien.
+	Rahim ne se sent pas bien.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3>
@@ -399,12 +378,11 @@ sick.
 <div id="text11" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0342/11.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3>
-	Il gémit&nbsp;: «&nbsp;J’ai mal au
-ventre&nbsp;!&nbsp;»
+	Il gémit: «&nbsp;J’ai mal au ventre&nbsp;!&nbsp;»
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3>
-	”Jag har så ont i magen”, viskar Rahim.
+	“Jag har så ont i magen”, viskar Rahim.
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3>
 	“My tummy is so sore,”
@@ -429,10 +407,7 @@ whispers Rahim.
 <div id="text12" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0342/12.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3>
-	Maman savait que cela
-arriverait.
-Ce sont les fruits qui
-punissent Rahim&nbsp;!
+	Maman savait que cela arriverait. Ce sont les fruits qui punissent Rahim&nbsp;!
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3>
@@ -462,15 +437,11 @@ punishing Rahim!
 <div id="text13" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0342/13.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3>
-	Plus tard, Rahim vient
-s’excuser et promet&nbsp;: «&nbsp;Je ne serai plus jamais
-aussi glouton.&nbsp;»
-Et nous, nous le
-croyons.
+	Plus tard, Rahim vient s’excuser et promet&nbsp;: «&nbsp;Je ne serai plus jamais aussi glouton.&nbsp;» Et nous, nous le croyons.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3>
-	Senare ber Rahim oss om ursäkt. ”Jag ska aldrig vara så girig igen”, lovar han. Vi tror alla på honom.
+	Senare ber Rahim oss om ursäkt. “Jag ska aldrig vara så girig igen”, lovar han. Vi tror alla på honom.
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3>
 	Later, Rahim says sorry
@@ -500,7 +471,7 @@ believe him.
 		<h5>Skriven av: Adelheid Marie Bwire</h5>
 		<h5>Illustrerad av: Melany Pietersen</h5>
 		<h5>Översatt av: Suzanne Alban, Translators without Borders</h5>
-		<h5>Uppläst av: Alexandra Danahy</h5>
+		<h5>Uppläst av: Monique Bournot-Trites</h5>
 		<h5>Språk: <a href="/storybooks-sverige/stories/fr">franska</a></h5>
 		<h5><a href="/storybooks-sverige/stories/fr/level2">Nivå 2</a></h5>
 		<h5>Källa: <a href="https://africanstorybook.org/reader.php?id=11989" target="_blank">Punishment</a> från <a href="https://africanstorybook.org/">African Storybook</a></h5>

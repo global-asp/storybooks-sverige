@@ -16,6 +16,7 @@
 	<meta name="description" content="Berättelser för Sverige är ett gratis utbildningsmaterial som främjar läs- och språkinlärning i hemmet, skolan och samhället. Hela 40 berättelser från African Storybook finns tillgängliga med text och ljud på svenska och de mest vanligt förekommande språken i Sverige.
 ">
 	<link rel="stylesheet" href="/storybooks-sverige/css/spectre.min.css">
+	<link rel="stylesheet" href="/storybooks-sverige/css/gsn.min.css">
 	<link rel="stylesheet" href="/storybooks-sverige/css/fontello.min.css">
 	<link rel="canonical" href="https://global-asp.github.io//storybooks-sverige/stories/es/0072/">
 	<link rel="alternate" type="application/rss+xml" title="Berättelser för Sverige" href="/storybooks-sverige">
@@ -87,18 +88,18 @@
 		<div class="btn-group cover-buttons">
 			<a href="#text02" class="btn btn-lg" title="Nästa sida"><i class="icon-arrow-down"></i></a>
 			<button class="btn btn-lg" id="playbutton01" onclick="playpause('01')" title="Spela/paus"><i class="icon-volume-up"></i></button>
-			<audio id="audio01" onended="resetbutton('01')" src="https://globalstorybooks.net/media/audio/es/0072/mp3/01.mp3"></audio>
+			<audio id="audio01" onended="resetbutton('01')" src="/storybooks-sverige/audio/es/0072/mp3/01.mp3"></audio>
 			<button onclick="switchlang('es,sv','sv,en,es')" class="btn btn-lg lang-primary" title="Byt mellan spanska och svenska">sv</button>
 			<button style="display:none" onclick="switchlang('es,en','sv,en,es')" class="btn btn-lg lang-secondary" title="Byt mellan svenska spanska och engelska">en</button>
 		</div>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Skriven av"><img class="cover-icon" src="/storybooks-sverige/css/pencil.svg" alt="Skriven av"></span> Zulu folktale</h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Illustrerad av"><img class="cover-icon" src="/storybooks-sverige/css/art.svg" alt="Illustrerad av"></span> Wiehan de Jager</h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Översatt av"><img class="cover-icon" src="/storybooks-sverige/css/global.svg" alt="Översatt av"></span> Karina Vásquez</h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Uppläst av"><img class="cover-icon" src="/storybooks-sverige/css/megaphone.svg" alt="Uppläst av"></span> Áurea Vericat</h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Språk"><img class="cover-icon" src="/storybooks-sverige/css/language.svg" alt="Språk"></span> <a href="/storybooks-sverige/stories/es">spanska</a></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Nivå"><img class="cover-icon" src="/storybooks-sverige/css/level.svg" alt="Nivå"></span> <a href="/storybooks-sverige/stories/es/level4">Nivå 4</a></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Berätta hela historien"><img class="cover-icon" src="/storybooks-sverige/css/speaker.svg" alt="Berätta hela historien"></span> <audio id="audioplayer" controls><source src="https://globalstorybooks.net/media/audio/es/0072/es-0072_honeyguide.mp3" type="audio/mpeg"></audio></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Spela upp historien (beta)"><img id="autoplay_icon" class="cover-icon" src="https://dohliam.github.io/elegant-circles/svg/play.svg" alt="Spela upp historien" style="cursor:pointer" onclick="autoplay()"></span></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Skriven av"><img class="cover-icon cover-icon-text" src="/storybooks-sverige/css/pencil.svg" alt="Skriven av"></span> Zulu folktale</h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Illustrerad av"><img class="cover-icon cover-icon-text" src="/storybooks-sverige/css/art.svg" alt="Illustrerad av"></span> Wiehan de Jager</h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Översatt av"><img class="cover-icon cover-icon-text" src="/storybooks-sverige/css/global.svg" alt="Översatt av"></span> Karina Vásquez</h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Uppläst av"><img class="cover-icon cover-icon-text" src="/storybooks-sverige/css/megaphone.svg" alt="Uppläst av"></span> Áurea Vericat</h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Språk"><img class="cover-icon cover-icon-text" src="/storybooks-sverige/css/language.svg" alt="Språk"></span> <a href="/storybooks-sverige/stories/es">spanska</a></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Nivå"><img class="cover-icon cover-icon-text" src="/storybooks-sverige/css/level.svg" alt="Nivå"></span> <a href="/storybooks-sverige/stories/es/level4">Nivå 4</a></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Berätta hela historien"><img class="cover-icon cover-icon-audio" src="/storybooks-sverige/css/speaker.svg" alt="Berätta hela historien"></span> <audio id="audioplayer" controls><source src="/0072/es-0072_honeyguide.mp3" type="audio/mpeg"></audio></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Spela upp historien (beta)"><img id="autoplay_icon" class="cover-icon cover-icon-text" src="https://dohliam.github.io/elegant-circles/svg/play.svg" alt="Spela upp historien" style="cursor:pointer" onclick="autoplay()"></span></h3>
 	</div>
 </div>
 <hr>
@@ -144,7 +145,7 @@ One day while Gingile was out hunting he heard the call of Ngede. Gingile’s mo
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
-	Efter en halvtimme kom de fram till ett stort vildväxande fikonträd. Ngede hoppade exalterat runt bland grenarna. Han satte sig sedan på en gren och lade huvudet på sned som för att säga: ”Här är det! Varför tar det så lång tid för dig att komma hit?” Gingile kunde inte se några bin under trädet men han litade på Ngede.
+	Efter en halvtimme kom de fram till ett stort vildväxande fikonträd. Ngede hoppade exalterat runt bland grenarna. Han satte sig sedan på en gren och lade huvudet på sned som för att säga: “Här är det! Varför tar det så lång tid för dig att komma hit?” Gingile kunde inte se några bin under trädet men han litade på Ngede.
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	After half an hour, they reached a huge wild fig tree.
@@ -302,7 +303,7 @@ Ngede perched on a rock near the boy and waited for his reward.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
-	Men Gingile släckte elden och började gå hemåt samtidigt som han ignorerade fågeln. Ngede ropade argt ut: ”SEG-err! SEG-err! Gingile stannade, stirrade på den lilla fågeln och började skratta högt. ”Vill du kanske ha lite honung, min vän? Ha, men jag gjorde allt arbete och fick ta emot alla sticken. Varför skulle jag dela med mig överhuvudtaget av den här underbara honungen?” Därefter gick han iväg. Ngede var rasande! Detta var inget bra sätt att behandla honom på! Men han skulle nog få sin hämnd.
+	Men Gingile släckte elden och började gå hemåt samtidigt som han ignorerade fågeln. Ngede ropade argt ut: “SEG-err! SEG-err!” Gingile stannade, stirrade på den lilla fågeln och började skratta högt. “Vill du kanske ha lite honung, min vän? Ha, men jag gjorde allt arbete och fick ta emot alla sticken. Varför skulle jag dela med mig överhuvudtaget av den här underbara honungen?” Därefter gick han iväg. Ngede var rasande! Detta var inget bra sätt att behandla honom på! Men han skulle nog få sin hämnd.
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	But, Gingile put out the fire, picked up his spear and started walking home, ignoring the bird.
@@ -336,7 +337,7 @@ Ngede was furious! This was no way to treat him! But he would get his revenge.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
-	En dag, flera veckor senare, hörde Gingile honungsropet från Ngede igen. Han kom ihåg den utsökta honungen och började ännu en gång följa fågeln. Efter att ha lett Gingile till kanten av skogen stannade Ngede för att vila i ett stort acaciaträd. Ah, tänkte Gingile. Bina måsta vara i det här trädet. Han tände snabbt en eld och började klättra upp med en rykande pinne mellan tänderna. Ngede satt och tittade.
+	En dag, flera veckor senare, hörde Gingile honungsropet från Ngede igen. Han kom ihåg den utsökta honungen och började ännu en gång följa fågeln. Efter att ha lett Gingile till kanten av skogen stannade Ngede för att vila i ett stort acaciaträd. Ah, tänkte Gingile. Bina måste vara i det här trädet. Han tände snabbt en eld och började klättra upp med en rykande pinne mellan tänderna. Ngede satt och tittade.
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	One day several weeks later Gingile again heard the honey call of Ngede. He remembered the delicious honey, and eagerly followed the bird once again.
@@ -366,7 +367,7 @@ After leading Gingile along the edge of the forest, Ngede stopped to rest in a g
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l1"><h3>
-	Gingile klättrade men undrade varför han inte horde det sedvanliga surrandet. Kanske bina finns djupt inne i trädet, tänkte han för sig själv. Han drog sig upp till en annan gren. Men instället för ett bo med bin stirrade han rakt in i ögonen på en leopard! Leoparden blev så arg över att ha fått sin sömn avbruten på ett så otrevligt sätt. Hennes ögon smalnade och hon öppnade sitt gap för att visa sina stora och mycket skarpa tänder.
+	Gingile klättrade men undrade varför han inte hörde det sedvanliga surrandet. Kanske bina finns djupt inne i trädet, tänkte han för sig själv. Han drog sig upp till en annan gren. Men istället för ett bo med bin stirrade han rakt in i ögonen på en leopard! Leoparden blev så arg över att ha fått sin sömn avbruten på ett så otrevligt sätt. Hennes ögon smalnade och hon öppnade sitt gap för att visa sina stora och mycket skarpa tänder.
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	Gingile climbed, wondering why he didn’t hear the usual buzzing. “Perhaps the hive is deep in the tree,” he thought to himself. He pulled himself up another branch. But instead of the hive, he was staring into the face of a leopard!

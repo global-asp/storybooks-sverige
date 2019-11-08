@@ -16,6 +16,7 @@
 	<meta name="description" content="Berättelser för Sverige är ett gratis utbildningsmaterial som främjar läs- och språkinlärning i hemmet, skolan och samhället. Hela 40 berättelser från African Storybook finns tillgängliga med text och ljud på svenska och de mest vanligt förekommande språken i Sverige.
 ">
 	<link rel="stylesheet" href="/storybooks-sverige/css/spectre.min.css">
+	<link rel="stylesheet" href="/storybooks-sverige/css/gsn.min.css">
 	<link rel="stylesheet" href="/storybooks-sverige/css/fontello.min.css">
 	<link rel="canonical" href="https://global-asp.github.io//storybooks-sverige/stories/fr/0089/">
 	<link rel="alternate" type="application/rss+xml" title="Berättelser för Sverige" href="/storybooks-sverige">
@@ -87,18 +88,18 @@
 		<div class="btn-group cover-buttons">
 			<a href="#text02" class="btn btn-lg" title="Nästa sida"><i class="icon-arrow-down"></i></a>
 			<button class="btn btn-lg" id="playbutton01" onclick="playpause('01')" title="Spela/paus"><i class="icon-volume-up"></i></button>
-			<audio id="audio01" onended="resetbutton('01')" src="https://globalstorybooks.net/media/audio/fr/0089/mp3/01.mp3"></audio>
+			<audio id="audio01" onended="resetbutton('01')" src="/storybooks-sverige/audio/fr/0089/mp3/01.mp3"></audio>
 			<button onclick="switchlang('fr,sv','sv,en,fr')" class="btn btn-lg lang-primary" title="Byt mellan franska och svenska">sv</button>
 			<button style="display:none" onclick="switchlang('fr,en','sv,en,fr')" class="btn btn-lg lang-secondary" title="Byt mellan svenska franska och engelska">en</button>
 		</div>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Skriven av"><img class="cover-icon" src="/storybooks-sverige/css/pencil.svg" alt="Skriven av"></span> Ursula Nafula</h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Illustrerad av"><img class="cover-icon" src="/storybooks-sverige/css/art.svg" alt="Illustrerad av"></span> Jesse Pietersen</h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Översatt av"><img class="cover-icon" src="/storybooks-sverige/css/global.svg" alt="Översatt av"></span> Alexandra Danahy</h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Uppläst av"><img class="cover-icon" src="/storybooks-sverige/css/megaphone.svg" alt="Uppläst av"></span> Alexandra Danahy</h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Språk"><img class="cover-icon" src="/storybooks-sverige/css/language.svg" alt="Språk"></span> <a href="/storybooks-sverige/stories/fr">franska</a></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Nivå"><img class="cover-icon" src="/storybooks-sverige/css/level.svg" alt="Nivå"></span> <a href="/storybooks-sverige/stories/fr/level2">Nivå 2</a></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Berätta hela historien"><img class="cover-icon" src="/storybooks-sverige/css/speaker.svg" alt="Berätta hela historien"></span> <audio id="audioplayer" controls><source src="https://globalstorybooks.net/media/audio/fr/0089/fr-0089_khalai.mp3" type="audio/mpeg"></audio></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Spela upp historien (beta)"><img id="autoplay_icon" class="cover-icon" src="https://dohliam.github.io/elegant-circles/svg/play.svg" alt="Spela upp historien" style="cursor:pointer" onclick="autoplay()"></span></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Skriven av"><img class="cover-icon cover-icon-text" src="/storybooks-sverige/css/pencil.svg" alt="Skriven av"></span> Ursula Nafula</h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Illustrerad av"><img class="cover-icon cover-icon-text" src="/storybooks-sverige/css/art.svg" alt="Illustrerad av"></span> Jesse Pietersen</h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Översatt av"><img class="cover-icon cover-icon-text" src="/storybooks-sverige/css/global.svg" alt="Översatt av"></span> Alexandra Danahy</h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Uppläst av"><img class="cover-icon cover-icon-text" src="/storybooks-sverige/css/megaphone.svg" alt="Uppläst av"></span> Monique Bournot-Trites</h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Språk"><img class="cover-icon cover-icon-text" src="/storybooks-sverige/css/language.svg" alt="Språk"></span> <a href="/storybooks-sverige/stories/fr">franska</a></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Nivå"><img class="cover-icon cover-icon-text" src="/storybooks-sverige/css/level.svg" alt="Nivå"></span> <a href="/storybooks-sverige/stories/fr/level2">Nivå 2</a></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Berätta hela historien"><img class="cover-icon cover-icon-audio" src="/storybooks-sverige/css/speaker.svg" alt="Berätta hela historien"></span> <audio id="audioplayer" controls><source src="/0089/fr-0089_khalai.mp3" type="audio/mpeg"></audio></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Spela upp historien (beta)"><img id="autoplay_icon" class="cover-icon cover-icon-text" src="https://dohliam.github.io/elegant-circles/svg/play.svg" alt="Spela upp historien" style="cursor:pointer" onclick="autoplay()"></span></h3>
 	</div>
 </div>
 <hr>
@@ -110,7 +111,7 @@
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3>
-	Det här är Khalai. Hon är sju år gammal. Hennes namn betyder ”den goda” på hennes språk lubukusu.
+	Det här är Khalai. Hon är sju år gammal. Hennes namn betyder “den goda” på hennes språk lubukusu.
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3>
 	This is Khalai.
@@ -138,11 +139,11 @@ language, Lubukusu.
 <div id="text03" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0089/03.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3>
-	Khalai se réveille et parle à l’oranger. «&nbsp;S’il-te-plais oranger, grandis et donne-nous beaucoup d’oranges mûres.&nbsp;»
+	Khalai se réveille et parle à l’oranger. «&nbsp;S’il-te-plait oranger, grandis et donne-nous beaucoup d’oranges mûres.&nbsp;»
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3>
-	Khalai vaknar och pratar med apelsinträdet. ”Snälla apelsinträd, väx dig stor och ge oss många mogna apelsiner”.
+	Khalai vaknar och pratar med apelsinträdet. “Snälla apelsinträd, väx dig stor och ge oss många mogna apelsiner.”
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3>
 	Khalai wakes up and
@@ -170,11 +171,11 @@ lots of ripe oranges.”
 <div id="text04" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0089/04.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3>
-	Khalai marche à l’école. En chemin, elle parle à l’herbe. «&nbsp;S’il-te-plais herbe, deviens plus verte et ne sèche pas.&nbsp;»
+	Khalai marche à l’école. En chemin, elle parle à l’herbe. «&nbsp;S’il-te-plait herbe, deviens plus verte et ne sèche pas.&nbsp;»
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3>
-	Khalei går till skolan. På vägen dit pratar hon med gräset. ”Snälla gräs, väx grönare och torka inte ut”.
+	Khalai går till skolan. På vägen dit pratar hon med gräset. “Snälla gräs, väx grönare och torka inte ut.”
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3>
 	Khalai walks to school.
@@ -202,11 +203,11 @@ and don’t dry up.”
 <div id="text05" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0089/05.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3>
-	Khalai passe des fleurs sauvages. «&nbsp;S’il-vous-plais fleurs, continuez à fleurir pour que je puisse vous porter dans mes cheveux.&nbsp;»
+	Khalai passe vers des fleurs sauvages. «&nbsp;S’il-vous-plait fleurs, continuez à fleurir pour que je puisse vous porter dans mes cheveux.&nbsp;»
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3>
-	Khalai går förbi vilda blommor. ”Snälla blommor, fortsätt att blomma så att jag kan fästa er i mitt hår”.
+	Khalai går förbi vilda blommor. “Snälla blommor, fortsätt att blomma så att jag kan fästa er i mitt hår.”
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3>
 	Khalai passes wild
@@ -234,11 +235,11 @@ hair.”
 <div id="text06" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0089/06.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3>
-	À l’école, Khalai parle à l’arbre au centre du camp. «&nbsp;S’il-te-plais arbre, fais pousser des grandes branches pour que nous puissions lire sous ton ombre.&nbsp;»
+	À l’école, Khalai parle à l’arbre au centre du camp. «&nbsp;S’il-te-plait arbre, fais pousser de grandes branches pour que nous puissions lire sous ton ombre.&nbsp;»
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3>
-	I skolan pratar Khalai med trädet som står mitt på skolgården. ”Snälla träd, låt dina grenar växa sig långa så att vi kan läsa under dem i skuggan”.
+	I skolan pratar Khalai med trädet som står mitt på skolgården. “Snälla träd, låt dina grenar växa sig långa så att vi kan läsa under dem i skuggan”.
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3>
 	At school, Khalai talks
@@ -268,11 +269,11 @@ read under your shade.”
 <div id="text07" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0089/07.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3>
-	Khalai parle à la haie qui entoure son école. «&nbsp;S’il-te-plais, pousse avec puissance et empêche les personnes méchantes d’entrer.&nbsp;»
+	Khalai parle à la haie qui entoure son école. «&nbsp;S’il-te-plait, deviens robuste et empêche les personnes méchantes d’entrer.&nbsp;»
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3>
-	Khalai pratar med häcken runt hennes skola. ”Snälla, väx dig stark och hindra onda människor från att komma in”.
+	Khalai pratar med häcken runt hennes skola. “Snälla, väx dig stark och hindra onda människor från att komma in.”
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3>
 	Khalai talks to the
@@ -304,7 +305,7 @@ from coming in.”
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3>
-	När Khalai kommer hem från skolan hälsar hon på apelsinträdet. ”Är dina apelsiner mogna än?”, frågar Khalai.
+	När Khalai kommer hem från skolan hälsar hon på apelsinträdet. “Är dina apelsiner mogna än?”, frågar Khalai.
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3>
 	When Khalai returns
@@ -332,11 +333,11 @@ yet?” asks Khalai.
 <div id="text09" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0089/09.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3>
-	«&nbsp;Les oranges sont encore vertes,&nbsp;» soupire Khalai. «&nbsp;Je te verrai demain oranger,&nbsp;» dit Khalai. «&nbsp;Peut-être demain tu auras une orange mûre pour moi&nbsp;!&nbsp;»
+	«&nbsp;Les oranges sont encore vertes,&nbsp;» soupire Khalai. «&nbsp;Je te verrai demain oranger,&nbsp;» dit Khalai. «&nbsp;Peut-être que demain tu auras une orange mûre pour moi&nbsp;!&nbsp;»
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3>
-	”Apelsinerna är fortfarande gröna”, suckar Khalai. ”Vi ses imorgon apelsinträdet”, säger Khalai. ”Kanske har du en mogen apelsin till mig då!”
+	“Apelsinerna är fortfarande gröna”, suckar Khalai. “Vi ses imorgon apelsinträdet”, säger Khalai. “Kanske har du en mogen apelsin till mig då!”
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3>
 	“The oranges are still
@@ -368,7 +369,7 @@ orange for me!”
 		<h5>Skriven av: Ursula Nafula</h5>
 		<h5>Illustrerad av: Jesse Pietersen</h5>
 		<h5>Översatt av: Alexandra Danahy</h5>
-		<h5>Uppläst av: Alexandra Danahy</h5>
+		<h5>Uppläst av: Monique Bournot-Trites</h5>
 		<h5>Språk: <a href="/storybooks-sverige/stories/fr">franska</a></h5>
 		<h5><a href="/storybooks-sverige/stories/fr/level2">Nivå 2</a></h5>
 		<h5>Källa: <a href="https://africanstorybook.org/reader.php?id=13545" target="_blank">Khalai talks to plants</a> från <a href="https://africanstorybook.org/">African Storybook</a></h5>

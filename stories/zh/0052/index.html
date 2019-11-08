@@ -16,6 +16,7 @@
 	<meta name="description" content="Berättelser för Sverige är ett gratis utbildningsmaterial som främjar läs- och språkinlärning i hemmet, skolan och samhället. Hela 40 berättelser från African Storybook finns tillgängliga med text och ljud på svenska och de mest vanligt förekommande språken i Sverige.
 ">
 	<link rel="stylesheet" href="/storybooks-sverige/css/spectre.min.css">
+	<link rel="stylesheet" href="/storybooks-sverige/css/gsn.min.css">
 	<link rel="stylesheet" href="/storybooks-sverige/css/fontello.min.css">
 	<link rel="canonical" href="https://global-asp.github.io//storybooks-sverige/stories/zh/0052/">
 	<link rel="alternate" type="application/rss+xml" title="Berättelser för Sverige" href="/storybooks-sverige">
@@ -87,18 +88,18 @@
 		<div class="btn-group cover-buttons">
 			<a href="#text02" class="btn btn-lg" title="Nästa sida"><i class="icon-arrow-down"></i></a>
 			<button class="btn btn-lg" id="playbutton01" onclick="playpause('01')" title="Spela/paus"><i class="icon-volume-up"></i></button>
-			<audio id="audio01" onended="resetbutton('01')" src="https://globalstorybooks.net/media/audio/zh/0052/mp3/01.mp3"></audio>
+			<audio id="audio01" onended="resetbutton('01')" src="/storybooks-sverige/audio/zh/0052/mp3/01.mp3"></audio>
 			<button onclick="switchlang('zh,sv','sv,en,zh')" class="btn btn-lg lang-primary" title="Byt mellan kinesiska och svenska">sv</button>
 			<button style="display:none" onclick="switchlang('zh,en','sv,en,zh')" class="btn btn-lg lang-secondary" title="Byt mellan svenska kinesiska och engelska">en</button>
 		</div>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Skriven av"><img class="cover-icon" src="/storybooks-sverige/css/pencil.svg" alt="Skriven av"></span> Rukia Nantale</h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Illustrerad av"><img class="cover-icon" src="/storybooks-sverige/css/art.svg" alt="Illustrerad av"></span> Benjamin Mitchley</h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Översatt av"><img class="cover-icon" src="/storybooks-sverige/css/global.svg" alt="Översatt av"></span> Vicky Liu</h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Uppläst av"><img class="cover-icon" src="/storybooks-sverige/css/megaphone.svg" alt="Uppläst av"></span> Zhuo Sun</h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Språk"><img class="cover-icon" src="/storybooks-sverige/css/language.svg" alt="Språk"></span> <a href="/storybooks-sverige/stories/zh">kinesiska</a></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Nivå"><img class="cover-icon" src="/storybooks-sverige/css/level.svg" alt="Nivå"></span> <a href="/storybooks-sverige/stories/zh/level5">Nivå 5</a></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Berätta hela historien"><img class="cover-icon" src="/storybooks-sverige/css/speaker.svg" alt="Berätta hela historien"></span> <audio id="audioplayer" controls><source src="https://globalstorybooks.net/media/audio/zh/0052/zh-0052_simbegwire.mp3" type="audio/mpeg"></audio></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Spela upp historien (beta)"><img id="autoplay_icon" class="cover-icon" src="https://dohliam.github.io/elegant-circles/svg/play.svg" alt="Spela upp historien" style="cursor:pointer" onclick="autoplay()"></span></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Skriven av"><img class="cover-icon cover-icon-text" src="/storybooks-sverige/css/pencil.svg" alt="Skriven av"></span> Rukia Nantale</h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Illustrerad av"><img class="cover-icon cover-icon-text" src="/storybooks-sverige/css/art.svg" alt="Illustrerad av"></span> Benjamin Mitchley</h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Översatt av"><img class="cover-icon cover-icon-text" src="/storybooks-sverige/css/global.svg" alt="Översatt av"></span> Vicky Liu</h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Uppläst av"><img class="cover-icon cover-icon-text" src="/storybooks-sverige/css/megaphone.svg" alt="Uppläst av"></span> Zhuo Sun</h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Språk"><img class="cover-icon cover-icon-text" src="/storybooks-sverige/css/language.svg" alt="Språk"></span> <a href="/storybooks-sverige/stories/zh">kinesiska</a></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Nivå"><img class="cover-icon cover-icon-text" src="/storybooks-sverige/css/level.svg" alt="Nivå"></span> <a href="/storybooks-sverige/stories/zh/level5">Nivå 5</a></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Berätta hela historien"><img class="cover-icon cover-icon-audio" src="/storybooks-sverige/css/speaker.svg" alt="Berätta hela historien"></span> <audio id="audioplayer" controls><source src="/0052/zh-0052_simbegwire.mp3" type="audio/mpeg"></audio></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Spela upp historien (beta)"><img id="autoplay_icon" class="cover-icon cover-icon-text" src="https://dohliam.github.io/elegant-circles/svg/play.svg" alt="Spela upp historien" style="cursor:pointer" onclick="autoplay()"></span></h3>
 	</div>
 </div>
 <hr>
@@ -149,7 +150,7 @@ homework.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l1"><h3>
-	En dag kom Simbegwires pappa hem senare än vanligt. ”Var är du, mitt barn?”, ropade han. Simbegwire sprang fram till sin pappa. Hon stannade när hon såg att han höll en annan kvinnas hand. ”Jag vill att du ska träffa någon speciell, mitt barn. Det här är Anita”, sade han leende.
+	En dag kom Simbegwires pappa hem senare än vanligt. “Var är du, mitt barn?”, ropade han. Simbegwire sprang fram till sin pappa. Hon stannade när hon såg att han höll en annan kvinnas hand. “Jag vill att du ska träffa någon speciell, mitt barn. Det här är Anita”, sade han leende.
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l2"><h3>
 	One day, Simbegwire’s father came
@@ -185,7 +186,7 @@ smiling.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l1"><h3>
-	”Hej Simbegwire, din pappa har berättat så mycket om dig”, sade Anita. Men hon log inte och tog inte flickan i hand. Simbegwires pappa var glad och lycklig. Han pratade om hur de tre skulle bo tillsammans och hur bra livet skulle bli för dem. ”Mitt barn, jag hoppas att du kan se Anita som din mamma”, sade han.
+	“Hej Simbegwire, din pappa har berättat så mycket om dig”, sade Anita. Men hon log inte och tog inte flickan i hand. Simbegwires pappa var glad och lycklig. Han pratade om hur de tre skulle bo tillsammans och hur bra livet skulle bli för dem. “Mitt barn, jag hoppas att du kan se Anita som din mamma”, sade han.
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l2"><h3>
 	“Hello Simbegwire, your father told
@@ -261,7 +262,7 @@ unhappy.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l1"><h3>
-	Efter ett par månader berättade Simbegwires pappa att han skulle vara borta från hemmet ett tag. ”Jag måste resa på grund av jobbet”, sade han. ”Men jag vet att ni kommer att se efter varandra.” Simbegwire såg ledsen ut, men hennes pappa märkte inget. Anita sade ingenting. Hon var inte heller glad.
+	Efter ett par månader berättade Simbegwires pappa att han skulle vara borta från hemmet ett tag. “Jag måste resa på grund av jobbet”, sade han. “Men jag vet att ni kommer att se efter varandra.” Simbegwire såg ledsen ut, men hennes pappa märkte inget. Anita sade ingenting. Hon var inte heller glad.
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l2"><h3>
 	After a few months, Simbegwire’s
@@ -333,7 +334,7 @@ blanket.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l1"><h3>
-	En morgon kom Simbegwire upp sent ur sängen. ”Din lata flicka!” skrek Anita. Hon drog upp Simbegwire ur sängen. Den dyrbara filten fastnade på en spik och slets sönder i två delar.
+	En morgon kom Simbegwire upp sent ur sängen. “Din lata flicka!” skrek Anita. Hon drog upp Simbegwire ur sängen. Den dyrbara filten fastnade på en spik och slets sönder i två delar.
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l2"><h3>
 	One morning, Simbegwire was late
@@ -366,7 +367,7 @@ and tore in two.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l1"><h3>
-	Simbegwire bev mycket upprörd. Hon bestämde sig för att rymma hemifrån. Hon tog bitarna av sin mammas filt, packade ihop lite mat och lämnade sedan huset. Hon följde samma väg som hennes pappa hade tagit.
+	Simbegwire blev mycket upprörd. Hon bestämde sig för att rymma hemifrån. Hon tog bitarna av sin mammas filt, packade ihop lite mat och lämnade sedan huset. Hon följde samma väg som hennes pappa hade tagit.
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l2"><h3>
 	Simbegwire was very upset. She
@@ -399,7 +400,7 @@ her father had taken.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l1"><h3>
-	När det blev kväll klättrade hon upp i ett träd nära en å och bäddade för sig själv bland grenarna. Medan hon somnare sjöng hon ”Mamma, mamma, du lämnade mig. Du lämnade mig och kom aldrig tillbaka. Mor, när kommer du tillbaka? Du lämnade mig.”
+	När det blev kväll klättrade hon upp i ett träd nära en å och bäddade för sig själv bland grenarna. Medan hon somnade sjöng hon: “Mamma, mamma, du lämnade mig. Du lämnade mig och kom aldrig tillbaka. Mor, när kommer du tillbaka? Du lämnade mig.”
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l2"><h3>
 	When it came to evening, she
@@ -474,7 +475,7 @@ the song.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l1"><h3>
-	Kvinnan tittade upp i trädet. När hon såg flicka och bitarna av den färgglada filten ropade hon: ”Simbegwire, min brors barn!” De andra kvinnorna slutade att tvätta och hjälpte Simbegwire att klättra ned från trädet. Hennes faster kramade flickan och försökte trösta henne.
+	Kvinnan tittade upp i trädet. När hon såg flicka och bitarna av den färgglada filten ropade hon: “Simbegwire, min brors barn!” De andra kvinnorna slutade att tvätta och hjälpte Simbegwire att klättra ned från trädet. Hennes faster kramade flickan och försökte trösta henne.
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l2"><h3>
 	This woman looked up into the tree.
@@ -547,7 +548,7 @@ look after her.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l1"><h3>
-	När Simbegwires pappa kom hem upptäckte han att hennes rum var tomt. ”Vad hände, Anita?” frågade han bekymrat. Kvinnan förklarade att Simbegwire hade rymt. ”Jag ville att hon skulle respektera mig”, sade hon. ”Men jag kanske var för sträng.” Simbegwires pappa lämnade huset och gick ut längs ån. Han fortsatte till systerns by för att se om hon hade sett Simbegwire.
+	När Simbegwires pappa kom hem upptäckte han att hennes rum var tomt. “Vad hände, Anita?” frågade han bekymrat. Kvinnan förklarade att Simbegwire hade rymt. “Jag ville att hon skulle respektera mig”, sade hon. “Men jag kanske var för sträng.” Simbegwires pappa lämnade huset och gick ut längs ån. Han fortsatte till systerns by för att se om hon hade sett Simbegwire.
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l2"><h3>
 	When Simbegwire’s father returned
@@ -587,7 +588,7 @@ Simbegwire.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l1"><h3>
-	Simbegwire lekte med sina kusiner när hon såg sin pappa långt borta. Hon blev rädd att han kanske skulle vara arg så hon sprang in i huset och gömde sig. Men hennes pappa gick fram till henne och sade: ” Simbegwire, du har hittat en perfekt mamma för dig. En som älskar dig och förstår dig. Jag är så stolt över dig och glad för dig.” De bestämde att Simbegwire skulle stanna hos sin faster så länge som hon ville.
+	Simbegwire lekte med sina kusiner när hon såg sin pappa långt borta. Hon blev rädd att han kanske skulle vara arg så hon sprang in i huset och gömde sig. Men hennes pappa gick fram till henne och sade: “Simbegwire, du har hittat en perfekt mamma för dig. En som älskar dig och förstår dig. Jag är så stolt över dig och glad för dig.” De bestämde att Simbegwire skulle stanna hos sin faster så länge som hon ville.
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l2"><h3>
 	Simbegwire was playing with her
@@ -628,7 +629,7 @@ wanted to.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l1"><h3>
-	Hennes pappa besökte henne varje dag. Till slut kom han tillsammans med Anita. Hon räckte Simbegwire handen och sade: ”Jag är ledsen, lilla du, jag gjorde fel”, grät hon. ”Kan du låta mig försöka igen?” Simbegwire tittade på sin pappa och hans bekymrade min. Sedan gick hon långsamt fram och lade armarna om Anita.
+	Hennes pappa besökte henne varje dag. Till slut kom han tillsammans med Anita. Hon räckte Simbegwire handen och sade: “Jag är ledsen, lilla du, jag gjorde fel”, grät hon. “Kan du låta mig försöka igen?” Simbegwire tittade på sin pappa och hans bekymrade min. Sedan gick hon långsamt fram och lade armarna om Anita.
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level5-txt l2"><h3>
 	Her father visited her every day.
