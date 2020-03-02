@@ -4,13 +4,13 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-	<link rel="manifest" href="/site.webmanifest">
-	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-	<link rel="shortcut icon" href=/favicon.ico?v=2">
-	<meta name="msapplication-TileColor" content="#da532c">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=4">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=4">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=4">
+	<link rel="manifest" href="/site.webmanifest?v=4">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg?v=4" color="#5bbad5">
+	<link rel="shortcut icon" href="/favicon.ico?v=4">
+	<meta name="msapplication-TileColor" content="#00aba9">
 	<meta name="theme-color" content="#ffffff">
 	<title>جاشك - Berättelser för Sverige</title>
 	<meta name="description" content="Berättelser för Sverige är ett gratis utbildningsmaterial som främjar läs- och språkinlärning i hemmet, skolan och samhället. Hela 40 berättelser från African Storybook finns tillgängliga med text och ljud på svenska och de mest vanligt förekommande språken i Sverige.
@@ -20,12 +20,10 @@
 	<link rel="stylesheet" href="/css/fontello.min.css">
 	<link rel="canonical" href="https://berattelser.se//stories/ckb/0201/">
 	<link rel="alternate" type="application/rss+xml" title="Berättelser för Sverige" href="">
-	<script src="/js/sbc.js"></script>
+	<script src="/js/sbc.min.js"></script>
 </head>
 
-
   <body>
-
 
     <div class="container">
 
@@ -49,7 +47,7 @@
 	</section>
 </header>
 
-        <div class="float-right"><a class="btn btn-lg" target="_blank" href="https://globalstorybooks.net/media/sbse/pdf/ckb/ckb-0201_åsnebarnet.pdf">Ladda ner PDF</a></div>
+        <div class="float-right"><a class="btn btn-lg" href="https://media.berattelser.se/pdf/ckb/ckb-0201_åsnebarnet.pdf" target="_blank">Ladda ner PDF</a></div> 
 
 <div class="float-right">
 	<select class="btn btn-lg" onchange="window.location=this.value" accesskey="l">
@@ -79,31 +77,30 @@
         <a class="btn btn-lg" href="/stories/ckb">Tillbaka till listan med berättelser</a><br><br>
 
 <div class="columns" id="text01">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0201/01.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0201/01.jpg"></div>
 	<div class=" column col-7 col-lg-12 col-md-12 col-sm-12">
 		<h1 dir="rtl"><span class="def">جاشك</span>
 			<span dir="ltr" class="l1">Åsnebarnet</span>
-			<span dir="ltr" class="l2">Donkey Child</span>
 		</h1>
 		<div class="btn-group cover-buttons">
 			<a href="#text02" class="btn btn-lg" title="Nästa sida"><i class="icon-arrow-down"></i></a>
 			<button class="btn btn-lg disabled" id="playbutton01" onclick="playpause('01')" title="Spela/paus"><i class="icon-volume-up"></i></button>
-			<button onclick="switchlang('ckb,sv','sv,en,ckb')" class="btn btn-lg lang-primary" title="Byt mellan kurdiska (sorani) och svenska">sv</button>
-			<button style="display:none" onclick="switchlang('ckb,en','sv,en,ckb')" class="btn btn-lg lang-secondary" title="Byt mellan svenska kurdiska (sorani) och engelska">en</button>
+			<button onclick="switchlang('ckb,sv','sv,ckb')" class="btn btn-lg lang-primary" title="Byt mellan kurdiska (sorani) och svenska">sv</button>
 		</div>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Skriven av"><img class="cover-icon cover-icon-text" src="/css/pencil.svg" alt="Skriven av"></span> Lindiwe Matshikiza</h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Illustrerad av"><img class="cover-icon cover-icon-text" src="/css/art.svg" alt="Illustrerad av"></span> Meghan Judge</h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Översatt av"><img class="cover-icon cover-icon-text" src="/css/global.svg" alt="Översatt av"></span> Agri Afshin</h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Språk"><img class="cover-icon cover-icon-text" src="/css/language.svg" alt="Språk"></span> <a href="/stories/ckb">kurdiska (sorani)</a></h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Nivå"><img class="cover-icon cover-icon-text" src="/css/level.svg" alt="Nivå"></span> <a href="/stories/ckb/level3">Nivå 3</a></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Berätta hela historien"><img class="cover-icon cover-icon-text" src="/css/speaker.svg" alt="Berätta hela historien"></span> <span class="cover_msg">Det finns ingen ljudfil till denna berättelse ännu.</span></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Spela upp historien (beta)"><img id="autoplay_icon" class="cover-icon cover-icon-text" src="https://dohliam.github.io/elegant-circles/svg/play.svg" alt="Spela upp historien" style="cursor:pointer" onclick="autoplay()"></span></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Narrate story"><img class="cover-icon cover-icon-text" src="/css/speaker.svg" alt="Narrate full story"></span> <span class="cover_msg">Det finns ingen ljudfil till denna berättelse ännu.</span></h3>
+
 	</div>
 </div>
+
 <hr>
 
-<div id="text02" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0201/02.jpg"></div>
+        <div id="text02" class="columns">
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0201/02.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3 dir="rtl">
 	بۆ یەكەم جار كچێكی  بچووك بوو كە  لە دوورەوە شكڵێكی سەیری بینی.
 	</h3></div>
@@ -111,9 +108,7 @@
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
 	Det var en liten flicka som först såg den mystiska gestalten i fjärran.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
-	It was a little girl who first saw the mysterious shape in the distance.
-	</h3></div>
+
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text01" class="btn btn-lg" title="Tillbaka"><i class="icon-arrow-up"></i></a>
@@ -121,8 +116,7 @@
 		<button class="btn btn-lg disabled" id="playbutton02" onclick="playpause('02')" title="Spela/paus"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ckb,sv','sv,en,ckb')" class="btn btn-lg lang-primary" title="Byt mellan kurdiska (sorani) och svenska">sv</button>
-		<button style="display:none" onclick="switchlang('ckb,en','sv,en,ckb')" class="btn btn-lg lang-secondary" title="Byt mellan kurdiska (sorani) och engelska">en</button>
+		<button onclick="switchlang('ckb,sv','sv,ckb')" class="btn btn-lg lang-primary" title="Byt mellan kurdiska (sorani) och svenska">sv</button>
 	</div>
 </div>
 
@@ -130,7 +124,7 @@
 <hr>
 
 <div id="text03" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0201/03.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0201/03.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3 dir="rtl">
 	دواتر كاتێك كەم كەم  شكڵەكە نزیك بوویەوە، ئەو بینی كە ژنێكی دووگیان بوو.
 	</h3></div>
@@ -138,9 +132,7 @@
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
 	När gestalten kom närmare såg hon att det var en höggravid kvinna.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
-	As the shape moved closer, she saw that it was a heavily pregnant woman.
-	</h3></div>
+
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text02" class="btn btn-lg" title="Tillbaka"><i class="icon-arrow-up"></i></a>
@@ -148,8 +140,7 @@
 		<button class="btn btn-lg disabled" id="playbutton03" onclick="playpause('03')" title="Spela/paus"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ckb,sv','sv,en,ckb')" class="btn btn-lg lang-primary" title="Byt mellan kurdiska (sorani) och svenska">sv</button>
-		<button style="display:none" onclick="switchlang('ckb,en','sv,en,ckb')" class="btn btn-lg lang-secondary" title="Byt mellan kurdiska (sorani) och engelska">en</button>
+		<button onclick="switchlang('ckb,sv','sv,ckb')" class="btn btn-lg lang-primary" title="Byt mellan kurdiska (sorani) och svenska">sv</button>
 	</div>
 </div>
 
@@ -157,7 +148,7 @@
 <hr>
 
 <div id="text04" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0201/04.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0201/04.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3 dir="rtl">
 	بە شەرمەوە، بەڵام ئازایانە كچە بچوكەكە لە ژنەكە نزیك بوویەوە. ئەوانەی كە لەگەڵ كچە بچوكەكە بوون بریاریاندا: “ئێمە دەبێ ئەو لێرە لە لای خۆمان بهێڵینەوە. ئێمە دەبێ خۆی و منداڵەكەی بپارێزین.”
 	</h3></div>
@@ -165,11 +156,7 @@
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
 	Blyg men modig gick den lilla flickan närmare kvinnan. ”Vi måste låta henne stanna hos oss”, bestämde den lilla flickans folk. ”Vi kommer att skydda henne och hennes barn.”
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
-	Shy but brave, the little girl moved nearer to the woman.
 
-“We must keep her with us,” the little girl’s people decided. “We’ll keep her and her child safe.”
-	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text03" class="btn btn-lg" title="Tillbaka"><i class="icon-arrow-up"></i></a>
@@ -177,8 +164,7 @@
 		<button class="btn btn-lg disabled" id="playbutton04" onclick="playpause('04')" title="Spela/paus"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ckb,sv','sv,en,ckb')" class="btn btn-lg lang-primary" title="Byt mellan kurdiska (sorani) och svenska">sv</button>
-		<button style="display:none" onclick="switchlang('ckb,en','sv,en,ckb')" class="btn btn-lg lang-secondary" title="Byt mellan kurdiska (sorani) och engelska">en</button>
+		<button onclick="switchlang('ckb,sv','sv,ckb')" class="btn btn-lg lang-primary" title="Byt mellan kurdiska (sorani) och svenska">sv</button>
 	</div>
 </div>
 
@@ -186,7 +172,7 @@
 <hr>
 
 <div id="text05" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0201/05.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0201/05.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3 dir="rtl">
 	منداڵەكە كاتی لەدایکبوونی بوو. “پاڵ پێوەبنێ!” “چارۆكە بێنە!” “ئاو!” “پاڵ بدە!”
 	</h3></div>
@@ -194,17 +180,7 @@
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
 	Barnet föddes inom kort. ”Krysta! Hämta filtar! Vatten! Krrryyyyssta!”
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
-	The child was soon on its way.
 
-“Push!”
-
-“Bring blankets!”
-
-“Water!”
-
-“Puuuuussssshhh!!!”
-	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text04" class="btn btn-lg" title="Tillbaka"><i class="icon-arrow-up"></i></a>
@@ -212,8 +188,7 @@
 		<button class="btn btn-lg disabled" id="playbutton05" onclick="playpause('05')" title="Spela/paus"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ckb,sv','sv,en,ckb')" class="btn btn-lg lang-primary" title="Byt mellan kurdiska (sorani) och svenska">sv</button>
-		<button style="display:none" onclick="switchlang('ckb,en','sv,en,ckb')" class="btn btn-lg lang-secondary" title="Byt mellan kurdiska (sorani) och engelska">en</button>
+		<button onclick="switchlang('ckb,sv','sv,ckb')" class="btn btn-lg lang-primary" title="Byt mellan kurdiska (sorani) och svenska">sv</button>
 	</div>
 </div>
 
@@ -221,7 +196,7 @@
 <hr>
 
 <div id="text06" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0201/06.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0201/06.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3 dir="rtl">
 	كاتێ ئەوان منداڵەكەیان بینی، هەموویان بە سەرسامییەوە كشانەوە. “گوێدرێژێك؟”
 	</h3></div>
@@ -229,11 +204,7 @@
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
 	Men när de såg bebisen hoppade de tillbaka av chock. ”En åsna?!”
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
-	But when they saw the baby, everyone jumped back in shock.
 
-“A donkey?!”
-	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text05" class="btn btn-lg" title="Tillbaka"><i class="icon-arrow-up"></i></a>
@@ -241,8 +212,7 @@
 		<button class="btn btn-lg disabled" id="playbutton06" onclick="playpause('06')" title="Spela/paus"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ckb,sv','sv,en,ckb')" class="btn btn-lg lang-primary" title="Byt mellan kurdiska (sorani) och svenska">sv</button>
-		<button style="display:none" onclick="switchlang('ckb,en','sv,en,ckb')" class="btn btn-lg lang-secondary" title="Byt mellan kurdiska (sorani) och engelska">en</button>
+		<button onclick="switchlang('ckb,sv','sv,ckb')" class="btn btn-lg lang-primary" title="Byt mellan kurdiska (sorani) och svenska">sv</button>
 	</div>
 </div>
 
@@ -250,7 +220,7 @@
 <hr>
 
 <div id="text07" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0201/07.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0201/07.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3 dir="rtl">
 	هەموویان دەستیان كرد بە دەمەقاڵێ كردن. هەندێكیان گوتیان: “ئێمە گوتبوومان ئاگامان لە مناڵەكە و دایكەكە دەبێ و ئەو كارەش دەكەین”، بەڵام ئەوانی دیكە گوتیان: “ئەمانە نەهامەتی دێنن!”
 	</h3></div>
@@ -258,13 +228,7 @@
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
 	Alla började gräla. ”Vi sa att vi skulle skydda mor och barn, och det är det vi kommer att göra”, sa en del. ”Men de kommer att föra med sig olycka!” sa andra.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
-	Everyone began to argue.
 
-“We said we would keep mother and child safe, and that’s what we’ll do,” said some.
-
-“But they will bring us bad luck!” said others.
-	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text06" class="btn btn-lg" title="Tillbaka"><i class="icon-arrow-up"></i></a>
@@ -272,8 +236,7 @@
 		<button class="btn btn-lg disabled" id="playbutton07" onclick="playpause('07')" title="Spela/paus"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ckb,sv','sv,en,ckb')" class="btn btn-lg lang-primary" title="Byt mellan kurdiska (sorani) och svenska">sv</button>
-		<button style="display:none" onclick="switchlang('ckb,en','sv,en,ckb')" class="btn btn-lg lang-secondary" title="Byt mellan kurdiska (sorani) och engelska">en</button>
+		<button onclick="switchlang('ckb,sv','sv,ckb')" class="btn btn-lg lang-primary" title="Byt mellan kurdiska (sorani) och svenska">sv</button>
 	</div>
 </div>
 
@@ -281,7 +244,7 @@
 <hr>
 
 <div id="text08" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0201/08.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0201/08.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3 dir="rtl">
 	و بەم جۆرە بوو كە ژنەكە دووبارە بێكەس مایەوە. ئەو نەیدەزانی كە دەبێ چی لەم منداڵە سەیرە بكات. ئەو نەیدەزانی ئەی خۆی دەبێ چی بكات.
 	</h3></div>
@@ -289,13 +252,7 @@
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
 	Och så blev kvinnan ensam igen. Hon undrade vad hon skulle göra med det här konstiga barnet. Hon undrade vad hon skulle göra med sig själv.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
-	And so the woman found herself alone again.
 
-She wondered what to do with this awkward child.
-
-She wondered what to do with herself.
-	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text07" class="btn btn-lg" title="Tillbaka"><i class="icon-arrow-up"></i></a>
@@ -303,8 +260,7 @@ She wondered what to do with herself.
 		<button class="btn btn-lg disabled" id="playbutton08" onclick="playpause('08')" title="Spela/paus"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ckb,sv','sv,en,ckb')" class="btn btn-lg lang-primary" title="Byt mellan kurdiska (sorani) och svenska">sv</button>
-		<button style="display:none" onclick="switchlang('ckb,en','sv,en,ckb')" class="btn btn-lg lang-secondary" title="Byt mellan kurdiska (sorani) och engelska">en</button>
+		<button onclick="switchlang('ckb,sv','sv,ckb')" class="btn btn-lg lang-primary" title="Byt mellan kurdiska (sorani) och svenska">sv</button>
 	</div>
 </div>
 
@@ -312,7 +268,7 @@ She wondered what to do with herself.
 <hr>
 
 <div id="text09" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0201/09.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0201/09.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3 dir="rtl">
 	بەڵام لە كۆتاییدا دانی بەوەدا نا كە ئەو منداڵە منداڵی خۆیەتی و ئەویش دایكییەتی.
 	</h3></div>
@@ -320,9 +276,7 @@ She wondered what to do with herself.
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
 	Till slut var hon tvungen att acceptera att han var hennes barn och att hon var hans mor.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
-	But finally she had to accept that he was her child and she was his mother.
-	</h3></div>
+
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text08" class="btn btn-lg" title="Tillbaka"><i class="icon-arrow-up"></i></a>
@@ -330,8 +284,7 @@ She wondered what to do with herself.
 		<button class="btn btn-lg disabled" id="playbutton09" onclick="playpause('09')" title="Spela/paus"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ckb,sv','sv,en,ckb')" class="btn btn-lg lang-primary" title="Byt mellan kurdiska (sorani) och svenska">sv</button>
-		<button style="display:none" onclick="switchlang('ckb,en','sv,en,ckb')" class="btn btn-lg lang-secondary" title="Byt mellan kurdiska (sorani) och engelska">en</button>
+		<button onclick="switchlang('ckb,sv','sv,ckb')" class="btn btn-lg lang-primary" title="Byt mellan kurdiska (sorani) och svenska">sv</button>
 	</div>
 </div>
 
@@ -339,7 +292,7 @@ She wondered what to do with herself.
 <hr>
 
 <div id="text10" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0201/10.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0201/10.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3 dir="rtl">
 	ئەگەر قەبارەی منداڵەكە هەر ئەوەندە چكۆلە مابایەوە، لەوانەیە هەموو شتێك جیاواز بوبا، بەڵام جاشكەكە هەتا دەهات گەورەو گەورەتر دەبوو تا وای لێهات بە کۆڵی دایکی هەڵنەدەگیرا. لەگەڵ ئەوەی زۆر هەوڵی دەدا، بەڵام نەیتوانی وەكوو مرۆڤێك ڕەفتار بكات. دایكی زۆرجار شەکەت و ماندوو دەبوو بەدەستییەوە. هەندێ جار ناچاری دەکرد جۆرە كارێك بکات كە كاری ئاژەڵان بوو.
 	</h3></div>
@@ -347,11 +300,7 @@ She wondered what to do with herself.
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
 	Om nu barnet hade fortsatt att vara lika litet hela tiden hade det kanske blivit annorlunda. Men åsnebarnet växte och växte tills han inte längre fick plats på sin mors rygg. Och hur mycket han än försökte kunde han inte bete sig som en människa. Hans mamma var ofta trött och frustrerad. Ibland tvingade hon honom att göra arbete som var menat för djur.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
-	Now, if the child had stayed that same, small size, everything might have been different. But the donkey child grew and grew until he could no longer fit on his mother’s back.
 
-And no matter how hard he tried, he could not behave like a human being. His mother was often tired and frustrated. Sometimes she made him do work meant for animals.
-	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text09" class="btn btn-lg" title="Tillbaka"><i class="icon-arrow-up"></i></a>
@@ -359,8 +308,7 @@ And no matter how hard he tried, he could not behave like a human being. His mot
 		<button class="btn btn-lg disabled" id="playbutton10" onclick="playpause('10')" title="Spela/paus"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ckb,sv','sv,en,ckb')" class="btn btn-lg lang-primary" title="Byt mellan kurdiska (sorani) och svenska">sv</button>
-		<button style="display:none" onclick="switchlang('ckb,en','sv,en,ckb')" class="btn btn-lg lang-secondary" title="Byt mellan kurdiska (sorani) och engelska">en</button>
+		<button onclick="switchlang('ckb,sv','sv,ckb')" class="btn btn-lg lang-primary" title="Byt mellan kurdiska (sorani) och svenska">sv</button>
 	</div>
 </div>
 
@@ -368,7 +316,7 @@ And no matter how hard he tried, he could not behave like a human being. His mot
 <hr>
 
 <div id="text11" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0201/11.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0201/11.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3 dir="rtl">
 	گێژبوون و توڕەیی لەناو ناخی گوێدرێژەكەدا دروست ببوو. ئەو نەیدەتوانی ئەم كارە بكات و ئەو نەیدەتوانی ئەو كارە بكات. ئەو نەیدەتوانی وەك ئەم بێت و ئەو نەیدەتوانی وەك ئەو بێت. ئەو ئەوەندە تووڕە بوو تا ئەوەی كە ڕۆژێك بە لوشكەیەك دایكی بە زەوی دادا.
 :
@@ -377,11 +325,7 @@ And no matter how hard he tried, he could not behave like a human being. His mot
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
 	Förvirring och ilska byggdes upp inuti Åsna. Han kunde inte göra det ena och han kunde inte göra det andra. Han kunde inte vara så här och han kunde inte vara så där. Han blev så arg att han en dag sparkade ner sin mamma till marken.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
-	Confusion and anger built up inside Donkey. He couldn’t do this and he couldn’t do that. He couldn’t be like this and he couldn’t be like that.
 
-He became so angry that, one day, he kicked his mother to the ground.
-	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text10" class="btn btn-lg" title="Tillbaka"><i class="icon-arrow-up"></i></a>
@@ -389,8 +333,7 @@ He became so angry that, one day, he kicked his mother to the ground.
 		<button class="btn btn-lg disabled" id="playbutton11" onclick="playpause('11')" title="Spela/paus"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ckb,sv','sv,en,ckb')" class="btn btn-lg lang-primary" title="Byt mellan kurdiska (sorani) och svenska">sv</button>
-		<button style="display:none" onclick="switchlang('ckb,en','sv,en,ckb')" class="btn btn-lg lang-secondary" title="Byt mellan kurdiska (sorani) och engelska">en</button>
+		<button onclick="switchlang('ckb,sv','sv,ckb')" class="btn btn-lg lang-primary" title="Byt mellan kurdiska (sorani) och svenska">sv</button>
 	</div>
 </div>
 
@@ -398,7 +341,7 @@ He became so angry that, one day, he kicked his mother to the ground.
 <hr>
 
 <div id="text12" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0201/12.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0201/12.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3 dir="rtl">
 	گوێدرێژەكە شەرمەزار بوو. ئەو هەڵات و هەتا توانی دوور كەوتەوە.
 	</h3></div>
@@ -406,9 +349,7 @@ He became so angry that, one day, he kicked his mother to the ground.
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
 	Åsna skämdes. Han började springa så långt bort så fort han kunde.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
-	Donkey was filled with shame. He started to run away as far and fast as he could.
-	</h3></div>
+
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text11" class="btn btn-lg" title="Tillbaka"><i class="icon-arrow-up"></i></a>
@@ -416,8 +357,7 @@ He became so angry that, one day, he kicked his mother to the ground.
 		<button class="btn btn-lg disabled" id="playbutton12" onclick="playpause('12')" title="Spela/paus"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ckb,sv','sv,en,ckb')" class="btn btn-lg lang-primary" title="Byt mellan kurdiska (sorani) och svenska">sv</button>
-		<button style="display:none" onclick="switchlang('ckb,en','sv,en,ckb')" class="btn btn-lg lang-secondary" title="Byt mellan kurdiska (sorani) och engelska">en</button>
+		<button onclick="switchlang('ckb,sv','sv,ckb')" class="btn btn-lg lang-primary" title="Byt mellan kurdiska (sorani) och svenska">sv</button>
 	</div>
 </div>
 
@@ -425,7 +365,7 @@ He became so angry that, one day, he kicked his mother to the ground.
 <hr>
 
 <div id="text13" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0201/13.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0201/13.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3 dir="rtl">
 	گوێدرێژەكە كاتێك لە غاردان وەستا، شەو داهاتبوو، و گوێدرێژەكە ون ببوو. ئەو لە تاریكایی شەودا دەیزەڕاند: “هی ها!” و دەنگی دەدایەوە. ئەو تەنیا بوو. ئەو خۆی وەك تۆپێك گڵۆڵە كرد و چووە ناو خەوێكی قووڵ و ناخۆشەوە.
 	</h3></div>
@@ -433,15 +373,7 @@ He became so angry that, one day, he kicked his mother to the ground.
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
 	När han till slut slutade springa, var det natt och Åsna var vilse. ”Iiaa, iiaa?” viskade han ut i mörkret. ”Iiaa, iiaa?” ekade det tillbaka. Han var ensam. Han rullade ihop sig till en boll och föll i en djup och orolig sömn.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
-	By the time he stopped running, it was night, and Donkey was lost.
 
-“Hee haw?” he whispered to the darkness.
-
-“Hee Haw?” it echoed back. He was alone.
-
-Curling himself into a tight ball, he fell into a deep and troubled sleep.
-	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text12" class="btn btn-lg" title="Tillbaka"><i class="icon-arrow-up"></i></a>
@@ -449,8 +381,7 @@ Curling himself into a tight ball, he fell into a deep and troubled sleep.
 		<button class="btn btn-lg disabled" id="playbutton13" onclick="playpause('13')" title="Spela/paus"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ckb,sv','sv,en,ckb')" class="btn btn-lg lang-primary" title="Byt mellan kurdiska (sorani) och svenska">sv</button>
-		<button style="display:none" onclick="switchlang('ckb,en','sv,en,ckb')" class="btn btn-lg lang-secondary" title="Byt mellan kurdiska (sorani) och engelska">en</button>
+		<button onclick="switchlang('ckb,sv','sv,ckb')" class="btn btn-lg lang-primary" title="Byt mellan kurdiska (sorani) och svenska">sv</button>
 	</div>
 </div>
 
@@ -458,7 +389,7 @@ Curling himself into a tight ball, he fell into a deep and troubled sleep.
 <hr>
 
 <div id="text14" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0201/14.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0201/14.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3 dir="rtl">
 	گوێدرێژەكە لە خەو هەستا و پیاوێكی پیری بەدیكرد كە لەسەر سەری چاوی تێ بڕیبوو. ئەو تەماشای چاوەكانی پیرەمێردەكەی كرد و هەستی بە تروسكەیەكی هیوا كرد.
 	</h3></div>
@@ -466,9 +397,7 @@ Curling himself into a tight ball, he fell into a deep and troubled sleep.
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
 	Åsna vaknade och upptäckte att en underlig gammal man stirrade ner på honom. Han tittade in i den gamle mannens ögon och började att känna en glimt av hopp.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
-	Donkey woke up to find a strange old man staring down at him. He looked into the old man’s eyes and started to feel a twinkle of hope.
-	</h3></div>
+
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text13" class="btn btn-lg" title="Tillbaka"><i class="icon-arrow-up"></i></a>
@@ -476,8 +405,7 @@ Curling himself into a tight ball, he fell into a deep and troubled sleep.
 		<button class="btn btn-lg disabled" id="playbutton14" onclick="playpause('14')" title="Spela/paus"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ckb,sv','sv,en,ckb')" class="btn btn-lg lang-primary" title="Byt mellan kurdiska (sorani) och svenska">sv</button>
-		<button style="display:none" onclick="switchlang('ckb,en','sv,en,ckb')" class="btn btn-lg lang-secondary" title="Byt mellan kurdiska (sorani) och engelska">en</button>
+		<button onclick="switchlang('ckb,sv','sv,ckb')" class="btn btn-lg lang-primary" title="Byt mellan kurdiska (sorani) och svenska">sv</button>
 	</div>
 </div>
 
@@ -485,7 +413,7 @@ Curling himself into a tight ball, he fell into a deep and troubled sleep.
 <hr>
 
 <div id="text15" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0201/15.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0201/15.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3 dir="rtl">
 	گوێدرێژکە رۆیشت تا لەگەڵ پیرە پیاوەكە بژی، ئەو كەسەی كە زۆر ڕێگەی جیاوازی بۆ ژیان فێر كرد. گوێدرێژەکە گوێڕایەڵی كرد و فێر بوو،  پیرە پیاوەكەش هەر ئاوا بوو. ئەوان یارمەتی یەكتریان دا و ئەوان پێكەوە پێكەنین.
 	</h3></div>
@@ -493,11 +421,7 @@ Curling himself into a tight ball, he fell into a deep and troubled sleep.
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
 	Åsna stannade kvar med den gamle mannen, som lärde honom många olika sätt att överleva på. Åsna lyssnade och lärde sig saker och det gjorde även den gamle mannen. De hjälpte varandra och skrattade tillsammans.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
-	Donkey went to stay with the old man, who taught him many different ways to survive.
 
-Donkey listened and learned, and so did the old man. They helped each other, and they laughed together.
-	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text14" class="btn btn-lg" title="Tillbaka"><i class="icon-arrow-up"></i></a>
@@ -505,8 +429,7 @@ Donkey listened and learned, and so did the old man. They helped each other, and
 		<button class="btn btn-lg disabled" id="playbutton15" onclick="playpause('15')" title="Spela/paus"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ckb,sv','sv,en,ckb')" class="btn btn-lg lang-primary" title="Byt mellan kurdiska (sorani) och svenska">sv</button>
-		<button style="display:none" onclick="switchlang('ckb,en','sv,en,ckb')" class="btn btn-lg lang-secondary" title="Byt mellan kurdiska (sorani) och engelska">en</button>
+		<button onclick="switchlang('ckb,sv','sv,ckb')" class="btn btn-lg lang-primary" title="Byt mellan kurdiska (sorani) och svenska">sv</button>
 	</div>
 </div>
 
@@ -514,7 +437,7 @@ Donkey listened and learned, and so did the old man. They helped each other, and
 <hr>
 
 <div id="text16" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0201/16.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0201/16.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3 dir="rtl">
 	بەرەبەیانی ڕۆژێك پیاوە پیرەكە داوای لە كەرەكە كرد كە سواری پشتی خۆی بكات و بۆ سەر لوتكەی چیایەكی ببات.
 	</h3></div>
@@ -522,9 +445,7 @@ Donkey listened and learned, and so did the old man. They helped each other, and
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
 	En morgon bad den gamle mannen Åsna att bära honom till toppen på ett berg.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
-	One morning, the old man asked Donkey to carry him to the top of a mountain.
-	</h3></div>
+
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text15" class="btn btn-lg" title="Tillbaka"><i class="icon-arrow-up"></i></a>
@@ -532,8 +453,7 @@ Donkey listened and learned, and so did the old man. They helped each other, and
 		<button class="btn btn-lg disabled" id="playbutton16" onclick="playpause('16')" title="Spela/paus"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ckb,sv','sv,en,ckb')" class="btn btn-lg lang-primary" title="Byt mellan kurdiska (sorani) och svenska">sv</button>
-		<button style="display:none" onclick="switchlang('ckb,en','sv,en,ckb')" class="btn btn-lg lang-secondary" title="Byt mellan kurdiska (sorani) och engelska">en</button>
+		<button onclick="switchlang('ckb,sv','sv,ckb')" class="btn btn-lg lang-primary" title="Byt mellan kurdiska (sorani) och svenska">sv</button>
 	</div>
 </div>
 
@@ -541,7 +461,7 @@ Donkey listened and learned, and so did the old man. They helped each other, and
 <hr>
 
 <div id="text17" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0201/17.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0201/17.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3 dir="rtl">
 	لە سەرەوە و لەناو هەورەكان خەویان لێكەوت. گوێدرێژەکە خەوی بە دایكییەوە بینی كە دایكی نەخۆشە و بانگی دەكات. لەو كاتەدا ئەو لە خەو هەستا…
 	</h3></div>
@@ -549,13 +469,7 @@ Donkey listened and learned, and so did the old man. They helped each other, and
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
 	Högt uppe bland molnen somnade de. Åsna drömde att hans mamma var sjuk och kallade på honom. Och när han vaknade…
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
-	High up amongst the clouds they fell asleep.
 
-Donkey dreamed that his mother was sick and calling to him.
-
-And when he woke up…
-	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text16" class="btn btn-lg" title="Tillbaka"><i class="icon-arrow-up"></i></a>
@@ -563,8 +477,7 @@ And when he woke up…
 		<button class="btn btn-lg disabled" id="playbutton17" onclick="playpause('17')" title="Spela/paus"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ckb,sv','sv,en,ckb')" class="btn btn-lg lang-primary" title="Byt mellan kurdiska (sorani) och svenska">sv</button>
-		<button style="display:none" onclick="switchlang('ckb,en','sv,en,ckb')" class="btn btn-lg lang-secondary" title="Byt mellan kurdiska (sorani) och engelska">en</button>
+		<button onclick="switchlang('ckb,sv','sv,ckb')" class="btn btn-lg lang-primary" title="Byt mellan kurdiska (sorani) och svenska">sv</button>
 	</div>
 </div>
 
@@ -572,7 +485,7 @@ And when he woke up…
 <hr>
 
 <div id="text18" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0201/18.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0201/18.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3 dir="rtl">
 	هەورەكان دیارنەمابوون، هاوكات هاوڕێكەشی، پیرە پیاوكە.
 	</h3></div>
@@ -580,9 +493,7 @@ And when he woke up…
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
 	… hade molnen försvunnit tillsammans med hans vän, den gamle mannen.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
-	… the clouds had disappeared along with his friend, the old man.
-	</h3></div>
+
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text17" class="btn btn-lg" title="Tillbaka"><i class="icon-arrow-up"></i></a>
@@ -590,8 +501,7 @@ And when he woke up…
 		<button class="btn btn-lg disabled" id="playbutton18" onclick="playpause('18')" title="Spela/paus"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ckb,sv','sv,en,ckb')" class="btn btn-lg lang-primary" title="Byt mellan kurdiska (sorani) och svenska">sv</button>
-		<button style="display:none" onclick="switchlang('ckb,en','sv,en,ckb')" class="btn btn-lg lang-secondary" title="Byt mellan kurdiska (sorani) och engelska">en</button>
+		<button onclick="switchlang('ckb,sv','sv,ckb')" class="btn btn-lg lang-primary" title="Byt mellan kurdiska (sorani) och svenska">sv</button>
 	</div>
 </div>
 
@@ -599,7 +509,7 @@ And when he woke up…
 <hr>
 
 <div id="text19" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0201/19.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0201/19.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3 dir="rtl">
 	گوێدرێژەکە سەرئەنجام تێگەییشت كە دەبێ چی بكات.
 	</h3></div>
@@ -607,9 +517,7 @@ And when he woke up…
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
 	Åsna visste äntligen vad han skulle göra.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
-	Donkey finally knew what to do.
-	</h3></div>
+
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text18" class="btn btn-lg" title="Tillbaka"><i class="icon-arrow-up"></i></a>
@@ -617,8 +525,7 @@ And when he woke up…
 		<button class="btn btn-lg disabled" id="playbutton19" onclick="playpause('19')" title="Spela/paus"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ckb,sv','sv,en,ckb')" class="btn btn-lg lang-primary" title="Byt mellan kurdiska (sorani) och svenska">sv</button>
-		<button style="display:none" onclick="switchlang('ckb,en','sv,en,ckb')" class="btn btn-lg lang-secondary" title="Byt mellan kurdiska (sorani) och engelska">en</button>
+		<button onclick="switchlang('ckb,sv','sv,ckb')" class="btn btn-lg lang-primary" title="Byt mellan kurdiska (sorani) och svenska">sv</button>
 	</div>
 </div>
 
@@ -626,7 +533,7 @@ And when he woke up…
 <hr>
 
 <div id="text20" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0201/20.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0201/20.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3 dir="rtl">
 	گوێدرێژەکە دایكی دیتەوە كە تەنیا بوو، و تازێ باری لەدەستدانی منداڵەكەی بوو. بۆ ماوەیەكی زۆر چاویان لە یەكتری بڕیبوو.  پاشان زۆر بە گەرمی ئامێزیان بە یەكتریدا كرد.
 	</h3></div>
@@ -634,11 +541,7 @@ And when he woke up…
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
 	Åsna hittade sin mamma, ensam och sörjande sitt försvunna barn. De stirrade på varandra en lång stund. Och sedan kramade de varandra mycket hårt.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
-	Donkey found his mother, alone and mourning her lost child. They stared at each other for a long time.
 
-And then hugged each other very hard.
-	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text19" class="btn btn-lg" title="Tillbaka"><i class="icon-arrow-up"></i></a>
@@ -646,8 +549,7 @@ And then hugged each other very hard.
 		<button class="btn btn-lg disabled" id="playbutton20" onclick="playpause('20')" title="Spela/paus"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ckb,sv','sv,en,ckb')" class="btn btn-lg lang-primary" title="Byt mellan kurdiska (sorani) och svenska">sv</button>
-		<button style="display:none" onclick="switchlang('ckb,en','sv,en,ckb')" class="btn btn-lg lang-secondary" title="Byt mellan kurdiska (sorani) och engelska">en</button>
+		<button onclick="switchlang('ckb,sv','sv,ckb')" class="btn btn-lg lang-primary" title="Byt mellan kurdiska (sorani) och svenska">sv</button>
 	</div>
 </div>
 
@@ -655,7 +557,7 @@ And then hugged each other very hard.
 <hr>
 
 <div id="text21" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0201/21.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0201/21.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3 dir="rtl">
 	جاشكەكە و دایكی بەیەكەوە گەورە بوون و پێكەوە ڕێگای زۆری جۆراوجۆریان بۆ ژیان دیتەوە. وردە وردە، بنەماڵەی دیکەش هاتن و لە دەوروبەری ئەوان نیشتەجێ بوون.
 	</h3></div>
@@ -663,11 +565,7 @@ And then hugged each other very hard.
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
 	Åsnan och hans mamma har växt ihop och hittat många sätt att leva sida vid sida på. Sakta har andra familjer bosatt sig överallt runt omkring dem.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
-	The donkey child and his mother have grown together and found many ways of living side by side.
 
-Slowly, all around them, other families have started to settle.
-	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text20" class="btn btn-lg" title="Tillbaka"><i class="icon-arrow-up"></i></a>
@@ -675,22 +573,22 @@ Slowly, all around them, other families have started to settle.
 		<button class="btn btn-lg disabled" id="playbutton21" onclick="playpause('21')" title="Spela/paus"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ckb,sv','sv,en,ckb')" class="btn btn-lg lang-primary" title="Byt mellan kurdiska (sorani) och svenska">sv</button>
-		<button style="display:none" onclick="switchlang('ckb,en','sv,en,ckb')" class="btn btn-lg lang-secondary" title="Byt mellan kurdiska (sorani) och engelska">en</button>
+		<button onclick="switchlang('ckb,sv','sv,ckb')" class="btn btn-lg lang-primary" title="Byt mellan kurdiska (sorani) och svenska">sv</button>
 	</div>
 </div>
 
 </div>
 <hr>
 
-<div id="colophon" class="columns">
+
+        <div id="colophon" class="columns">
 	<div class="column col-7 col-lg-12 col-md-12 col-sm-12">
-		<h5>Skriven av: Lindiwe Matshikiza</h5>
-		<h5>Illustrerad av: Meghan Judge</h5>
-		<h5>Översatt av: Agri Afshin</h5>
-		<h5>Språk: <a href="/stories/ckb">kurdiska (sorani)</a></h5>
-		<h5><a href="/stories/ckb/level3">Nivå 3</a></h5>
-		<h5>Källa: <a href="https://africanstorybook.org/reader.php?id=15028" target="_blank">Donkey Child</a> från <a href="https://africanstorybook.org/">African Storybook</a></h5>
+		<h5><span class="colophon-heading">Skriven av:</span> Lindiwe Matshikiza</h5>
+		<h5><span class="colophon-heading">Illustrerad av:</span> Meghan Judge</h5>
+		<h5><span class="colophon-heading">Översatt av:</span> Agri Afshin</h5>
+		<h5><span class="colophon-heading">Språk:</span> <a href="/stories/ckb">kurdiska (sorani)</a></h5>
+		<h5><span class="colophon-heading">Nivå:</span> <a href="/stories/ckb/level3">Nivå 3</a></h5>
+		<h5><span class="colophon-heading">Källa:</span> <a href="https://africanstorybook.org/reader.php?id=15028" target="_blank">Donkey Child</a> från <a href="https://africanstorybook.org/">African Storybook-projektet</a></h5>
 
 		<div><a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.sv" target="_blank"><img alt="Creative Commons Licens" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />Släppt under <a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.sv" target="_blank">Creative Commons Erkännande 4.0 Internationell Licens</a>.</div>
 
@@ -708,10 +606,9 @@ Slowly, all around them, other families have started to settle.
 </div>
 <div>
 <h5>Valmöjligheter</h5>
-	<a class="btn btn-lg" href="/stories/ckb" class="button">Tillbaka till listan med berättelser</a> <a class="btn btn-lg" target="_blank" href="https://globalstorybooks.net/media/sbse/pdf/ckb/ckb-0201_åsnebarnet.pdf">Ladda ner PDF</a>
+	<a class="btn btn-lg" href="/stories/ckb" class="button">Tillbaka till listan med berättelser</a> <a class="btn btn-lg" href="https://media.berattelser.se/pdf/ckb/ckb-0201_åsnebarnet.pdf" target="_blank">Ladda ner PDF</a>
 <br><br>
 </div>
-
 
 
     </div>

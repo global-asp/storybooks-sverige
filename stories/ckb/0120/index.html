@@ -4,13 +4,13 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-	<link rel="manifest" href="/site.webmanifest">
-	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-	<link rel="shortcut icon" href=/favicon.ico?v=2">
-	<meta name="msapplication-TileColor" content="#da532c">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=4">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=4">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=4">
+	<link rel="manifest" href="/site.webmanifest?v=4">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg?v=4" color="#5bbad5">
+	<link rel="shortcut icon" href="/favicon.ico?v=4">
+	<meta name="msapplication-TileColor" content="#00aba9">
 	<meta name="theme-color" content="#ffffff">
 	<title>قژ - Berättelser för Sverige</title>
 	<meta name="description" content="Berättelser för Sverige är ett gratis utbildningsmaterial som främjar läs- och språkinlärning i hemmet, skolan och samhället. Hela 40 berättelser från African Storybook finns tillgängliga med text och ljud på svenska och de mest vanligt förekommande språken i Sverige.
@@ -20,12 +20,10 @@
 	<link rel="stylesheet" href="/css/fontello.min.css">
 	<link rel="canonical" href="https://berattelser.se//stories/ckb/0120/">
 	<link rel="alternate" type="application/rss+xml" title="Berättelser för Sverige" href="">
-	<script src="/js/sbc.js"></script>
+	<script src="/js/sbc.min.js"></script>
 </head>
 
-
   <body>
-
 
     <div class="container">
 
@@ -49,7 +47,7 @@
 	</section>
 </header>
 
-        <div class="float-right"><a class="btn btn-lg" target="_blank" href="https://globalstorybooks.net/media/sbse/pdf/ckb/ckb-0120_hår.pdf">Ladda ner PDF</a></div>
+        <div class="float-right"><a class="btn btn-lg" href="https://media.berattelser.se/pdf/ckb/ckb-0120_hår.pdf" target="_blank">Ladda ner PDF</a></div> 
 
 <div class="float-right">
 	<select class="btn btn-lg" onchange="window.location=this.value" accesskey="l">
@@ -79,31 +77,30 @@
         <a class="btn btn-lg" href="/stories/ckb">Tillbaka till listan med berättelser</a><br><br>
 
 <div class="columns" id="text01">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0120/01.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0120/01.jpg"></div>
 	<div class=" column col-7 col-lg-12 col-md-12 col-sm-12">
 		<h1 dir="rtl"><span class="def">قژ</span>
 			<span dir="ltr" class="l1">Hår</span>
-			<span dir="ltr" class="l2">Hair</span>
 		</h1>
 		<div class="btn-group cover-buttons">
 			<a href="#text02" class="btn btn-lg" title="Nästa sida"><i class="icon-arrow-down"></i></a>
 			<button class="btn btn-lg disabled" id="playbutton01" onclick="playpause('01')" title="Spela/paus"><i class="icon-volume-up"></i></button>
-			<button onclick="switchlang('ckb,sv','sv,en,ckb')" class="btn btn-lg lang-primary" title="Byt mellan kurdiska (sorani) och svenska">sv</button>
-			<button style="display:none" onclick="switchlang('ckb,en','sv,en,ckb')" class="btn btn-lg lang-secondary" title="Byt mellan svenska kurdiska (sorani) och engelska">en</button>
+			<button onclick="switchlang('ckb,sv','sv,ckb')" class="btn btn-lg lang-primary" title="Byt mellan kurdiska (sorani) och svenska">sv</button>
 		</div>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Skriven av"><img class="cover-icon cover-icon-text" src="/css/pencil.svg" alt="Skriven av"></span> Clare Verbeek, Thembani Dladla, Zanele Buthelezi</h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Illustrerad av"><img class="cover-icon cover-icon-text" src="/css/art.svg" alt="Illustrerad av"></span> Bronwen Heath</h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Översatt av"><img class="cover-icon cover-icon-text" src="/css/global.svg" alt="Översatt av"></span> Agri Afshin</h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Språk"><img class="cover-icon cover-icon-text" src="/css/language.svg" alt="Språk"></span> <a href="/stories/ckb">kurdiska (sorani)</a></h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Nivå"><img class="cover-icon cover-icon-text" src="/css/level.svg" alt="Nivå"></span> <a href="/stories/ckb/level1">Nivå 1</a></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Berätta hela historien"><img class="cover-icon cover-icon-text" src="/css/speaker.svg" alt="Berätta hela historien"></span> <span class="cover_msg">Det finns ingen ljudfil till denna berättelse ännu.</span></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Spela upp historien (beta)"><img id="autoplay_icon" class="cover-icon cover-icon-text" src="https://dohliam.github.io/elegant-circles/svg/play.svg" alt="Spela upp historien" style="cursor:pointer" onclick="autoplay()"></span></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Narrate story"><img class="cover-icon cover-icon-text" src="/css/speaker.svg" alt="Narrate full story"></span> <span class="cover_msg">Det finns ingen ljudfil till denna berättelse ännu.</span></h3>
+
 	</div>
 </div>
+
 <hr>
 
-<div id="text02" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0120/02.jpg"></div>
+        <div id="text02" class="columns">
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0120/02.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt def"><h3 dir="rtl">
 	توولی قژی كورتە.
 	</h3></div>
@@ -111,9 +108,7 @@
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt l1"><h3>
 	Thuli har kort hår.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt l2"><h3>
-	Thuli has short hair.
-	</h3></div>
+
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text01" class="btn btn-lg" title="Tillbaka"><i class="icon-arrow-up"></i></a>
@@ -121,8 +116,7 @@
 		<button class="btn btn-lg disabled" id="playbutton02" onclick="playpause('02')" title="Spela/paus"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ckb,sv','sv,en,ckb')" class="btn btn-lg lang-primary" title="Byt mellan kurdiska (sorani) och svenska">sv</button>
-		<button style="display:none" onclick="switchlang('ckb,en','sv,en,ckb')" class="btn btn-lg lang-secondary" title="Byt mellan kurdiska (sorani) och engelska">en</button>
+		<button onclick="switchlang('ckb,sv','sv,ckb')" class="btn btn-lg lang-primary" title="Byt mellan kurdiska (sorani) och svenska">sv</button>
 	</div>
 </div>
 
@@ -130,7 +124,7 @@
 <hr>
 
 <div id="text03" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0120/03.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0120/03.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt def"><h3 dir="rtl">
 	ئانا قژی درێژە.
 	</h3></div>
@@ -138,9 +132,7 @@
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt l1"><h3>
 	Anna har långt hår.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt l2"><h3>
-	Anna has long hair.
-	</h3></div>
+
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text02" class="btn btn-lg" title="Tillbaka"><i class="icon-arrow-up"></i></a>
@@ -148,8 +140,7 @@
 		<button class="btn btn-lg disabled" id="playbutton03" onclick="playpause('03')" title="Spela/paus"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ckb,sv','sv,en,ckb')" class="btn btn-lg lang-primary" title="Byt mellan kurdiska (sorani) och svenska">sv</button>
-		<button style="display:none" onclick="switchlang('ckb,en','sv,en,ckb')" class="btn btn-lg lang-secondary" title="Byt mellan kurdiska (sorani) och engelska">en</button>
+		<button onclick="switchlang('ckb,sv','sv,ckb')" class="btn btn-lg lang-primary" title="Byt mellan kurdiska (sorani) och svenska">sv</button>
 	</div>
 </div>
 
@@ -157,7 +148,7 @@
 <hr>
 
 <div id="text04" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0120/04.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0120/04.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt def"><h3 dir="rtl">
 	كاتی درێژترین قژی هەیە.
 	</h3></div>
@@ -165,10 +156,7 @@
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt l1"><h3>
 	Cathy har det längsta håret.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt l2"><h3>
-	Cathy has the longest
-hair.
-	</h3></div>
+
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text03" class="btn btn-lg" title="Tillbaka"><i class="icon-arrow-up"></i></a>
@@ -176,8 +164,7 @@ hair.
 		<button class="btn btn-lg disabled" id="playbutton04" onclick="playpause('04')" title="Spela/paus"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ckb,sv','sv,en,ckb')" class="btn btn-lg lang-primary" title="Byt mellan kurdiska (sorani) och svenska">sv</button>
-		<button style="display:none" onclick="switchlang('ckb,en','sv,en,ckb')" class="btn btn-lg lang-secondary" title="Byt mellan kurdiska (sorani) och engelska">en</button>
+		<button onclick="switchlang('ckb,sv','sv,ckb')" class="btn btn-lg lang-primary" title="Byt mellan kurdiska (sorani) och svenska">sv</button>
 	</div>
 </div>
 
@@ -185,7 +172,7 @@ hair.
 <hr>
 
 <div id="text05" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0120/05.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0120/05.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt def"><h3 dir="rtl">
 	زاما قژی بە کەزی کردووە.
 	</h3></div>
@@ -193,10 +180,7 @@ hair.
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt l1"><h3>
 	Zama har flätat sitt hår.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt l2"><h3>
-	Zama has plaited her
-hair.
-	</h3></div>
+
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text04" class="btn btn-lg" title="Tillbaka"><i class="icon-arrow-up"></i></a>
@@ -204,8 +188,7 @@ hair.
 		<button class="btn btn-lg disabled" id="playbutton05" onclick="playpause('05')" title="Spela/paus"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ckb,sv','sv,en,ckb')" class="btn btn-lg lang-primary" title="Byt mellan kurdiska (sorani) och svenska">sv</button>
-		<button style="display:none" onclick="switchlang('ckb,en','sv,en,ckb')" class="btn btn-lg lang-secondary" title="Byt mellan kurdiska (sorani) och engelska">en</button>
+		<button onclick="switchlang('ckb,sv','sv,ckb')" class="btn btn-lg lang-primary" title="Byt mellan kurdiska (sorani) och svenska">sv</button>
 	</div>
 </div>
 
@@ -213,7 +196,7 @@ hair.
 <hr>
 
 <div id="text06" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0120/06.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0120/06.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt def"><h3 dir="rtl">
 	بابا ڕیشی هەیە.
 	</h3></div>
@@ -221,9 +204,7 @@ hair.
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt l1"><h3>
 	Baba har skägg.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt l2"><h3>
-	Baba has a beard.
-	</h3></div>
+
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text05" class="btn btn-lg" title="Tillbaka"><i class="icon-arrow-up"></i></a>
@@ -231,8 +212,7 @@ hair.
 		<button class="btn btn-lg disabled" id="playbutton06" onclick="playpause('06')" title="Spela/paus"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ckb,sv','sv,en,ckb')" class="btn btn-lg lang-primary" title="Byt mellan kurdiska (sorani) och svenska">sv</button>
-		<button style="display:none" onclick="switchlang('ckb,en','sv,en,ckb')" class="btn btn-lg lang-secondary" title="Byt mellan kurdiska (sorani) och engelska">en</button>
+		<button onclick="switchlang('ckb,sv','sv,ckb')" class="btn btn-lg lang-primary" title="Byt mellan kurdiska (sorani) och svenska">sv</button>
 	</div>
 </div>
 
@@ -240,7 +220,7 @@ hair.
 <hr>
 
 <div id="text07" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0120/07.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0120/07.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt def"><h3 dir="rtl">
 	زانێلا قژی شانە كردووە.
 	</h3></div>
@@ -248,10 +228,7 @@ hair.
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt l1"><h3>
 	Zanele har kammat sitt hår.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt l2"><h3>
-	Zanele has combed her
-hair.
-	</h3></div>
+
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text06" class="btn btn-lg" title="Tillbaka"><i class="icon-arrow-up"></i></a>
@@ -259,8 +236,7 @@ hair.
 		<button class="btn btn-lg disabled" id="playbutton07" onclick="playpause('07')" title="Spela/paus"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ckb,sv','sv,en,ckb')" class="btn btn-lg lang-primary" title="Byt mellan kurdiska (sorani) och svenska">sv</button>
-		<button style="display:none" onclick="switchlang('ckb,en','sv,en,ckb')" class="btn btn-lg lang-secondary" title="Byt mellan kurdiska (sorani) och engelska">en</button>
+		<button onclick="switchlang('ckb,sv','sv,ckb')" class="btn btn-lg lang-primary" title="Byt mellan kurdiska (sorani) och svenska">sv</button>
 	</div>
 </div>
 
@@ -268,7 +244,7 @@ hair.
 <hr>
 
 <div id="text08" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0120/08.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0120/08.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt def"><h3 dir="rtl">
 	تابوو قژی كورت كردووەتەوە.
 	</h3></div>
@@ -276,9 +252,7 @@ hair.
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt l1"><h3>
 	Thabo har klippt sitt hår.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt l2"><h3>
-	Thabo has cut his hair.
-	</h3></div>
+
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text07" class="btn btn-lg" title="Tillbaka"><i class="icon-arrow-up"></i></a>
@@ -286,8 +260,7 @@ hair.
 		<button class="btn btn-lg disabled" id="playbutton08" onclick="playpause('08')" title="Spela/paus"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ckb,sv','sv,en,ckb')" class="btn btn-lg lang-primary" title="Byt mellan kurdiska (sorani) och svenska">sv</button>
-		<button style="display:none" onclick="switchlang('ckb,en','sv,en,ckb')" class="btn btn-lg lang-secondary" title="Byt mellan kurdiska (sorani) och engelska">en</button>
+		<button onclick="switchlang('ckb,sv','sv,ckb')" class="btn btn-lg lang-primary" title="Byt mellan kurdiska (sorani) och svenska">sv</button>
 	</div>
 </div>
 
@@ -295,7 +268,7 @@ hair.
 <hr>
 
 <div id="text09" class="columns">
-	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0120/09.jpg"></div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0120/09.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt def"><h3 dir="rtl">
 	تێمبا قژی تاشیوە.
 	</h3></div>
@@ -303,10 +276,7 @@ hair.
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt l1"><h3>
 	Themba har rakat av sitt hår.
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt l2"><h3>
-	Themba has shaved his
-hair.
-	</h3></div>
+
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text08" class="btn btn-lg" title="Tillbaka"><i class="icon-arrow-up"></i></a>
@@ -314,22 +284,22 @@ hair.
 		<button class="btn btn-lg disabled" id="playbutton09" onclick="playpause('09')" title="Spela/paus"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ckb,sv','sv,en,ckb')" class="btn btn-lg lang-primary" title="Byt mellan kurdiska (sorani) och svenska">sv</button>
-		<button style="display:none" onclick="switchlang('ckb,en','sv,en,ckb')" class="btn btn-lg lang-secondary" title="Byt mellan kurdiska (sorani) och engelska">en</button>
+		<button onclick="switchlang('ckb,sv','sv,ckb')" class="btn btn-lg lang-primary" title="Byt mellan kurdiska (sorani) och svenska">sv</button>
 	</div>
 </div>
 
 </div>
 <hr>
 
-<div id="colophon" class="columns">
+
+        <div id="colophon" class="columns">
 	<div class="column col-7 col-lg-12 col-md-12 col-sm-12">
-		<h5>Skriven av: Clare Verbeek, Thembani Dladla, Zanele Buthelezi</h5>
-		<h5>Illustrerad av: Bronwen Heath</h5>
-		<h5>Översatt av: Agri Afshin</h5>
-		<h5>Språk: <a href="/stories/ckb">kurdiska (sorani)</a></h5>
-		<h5><a href="/stories/ckb/level1">Nivå 1</a></h5>
-		<h5>Källa: <a href="https://africanstorybook.org/reader.php?id=1746" target="_blank">Hair</a> från <a href="https://africanstorybook.org/">African Storybook</a></h5>
+		<h5><span class="colophon-heading">Skriven av:</span> Clare Verbeek, Thembani Dladla, Zanele Buthelezi</h5>
+		<h5><span class="colophon-heading">Illustrerad av:</span> Bronwen Heath</h5>
+		<h5><span class="colophon-heading">Översatt av:</span> Agri Afshin</h5>
+		<h5><span class="colophon-heading">Språk:</span> <a href="/stories/ckb">kurdiska (sorani)</a></h5>
+		<h5><span class="colophon-heading">Nivå:</span> <a href="/stories/ckb/level1">Nivå 1</a></h5>
+		<h5><span class="colophon-heading">Källa:</span> <a href="https://africanstorybook.org/reader.php?id=1746" target="_blank">Hair</a> från <a href="https://africanstorybook.org/">African Storybook-projektet</a></h5>
 
 		<div><a rel="license" href="https://creativecommons.org/licenses/by-nc/3.0/deed.sv" target="_blank"><img alt="Creative Commons Licens" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/3.0/88x31.png" /></a><br />Släppt under <a rel="license" href="https://creativecommons.org/licenses/by-nc/3.0/deed.sv" target="_blank">Creative Commons Erkännande-IckeKommersiell 3.0 Internationell Licens</a>.</div>
 
@@ -354,10 +324,9 @@ hair.
 </div>
 <div>
 <h5>Valmöjligheter</h5>
-	<a class="btn btn-lg" href="/stories/ckb" class="button">Tillbaka till listan med berättelser</a> <a class="btn btn-lg" target="_blank" href="https://globalstorybooks.net/media/sbse/pdf/ckb/ckb-0120_hår.pdf">Ladda ner PDF</a>
+	<a class="btn btn-lg" href="/stories/ckb" class="button">Tillbaka till listan med berättelser</a> <a class="btn btn-lg" href="https://media.berattelser.se/pdf/ckb/ckb-0120_hår.pdf" target="_blank">Ladda ner PDF</a>
 <br><br>
 </div>
-
 
 
     </div>
