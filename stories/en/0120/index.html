@@ -47,7 +47,7 @@
 	</section>
 </header>
 
-        <div class="float-right"><a class="btn btn-lg" href="https://media.berattelser.se/pdf/en/en-0120_hår.pdf" target="_blank">Ladda ner PDF</a></div> 
+        <div class="float-right"><button class="btn btn-lg" onclick="pdfdl()">Val för att ladda ner</button></div> 
 
 <div class="float-right">
 	<select class="btn btn-lg" onchange="window.location=this.value" accesskey="l">
@@ -96,10 +96,48 @@
 		<h3><span class="tooltip tooltip-right" data-tooltip="Uppläst av"><img class="cover-icon cover-icon-text" src="/css/megaphone.svg" alt="Uppläst av"></span> Darshan Soni</h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Språk"><img class="cover-icon cover-icon-text" src="/css/language.svg" alt="Språk"></span> <a href="/stories/en">engelska</a></h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Nivå"><img class="cover-icon cover-icon-text" src="/css/level.svg" alt="Nivå"></span> <a href="/stories/en/level1">Nivå 1</a></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Narrate story"><img class="cover-icon cover-icon-audio" src="/css/speaker.svg" alt="Narrate full story"></span> <audio id="audioplayer" controls><source src="https://media.berattelser.se/audio/en/0120/en-0120_hair.mp3" type="audio/mpeg"></audio></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Läs berätning"><img class="cover-icon cover-icon-audio" src="/css/speaker.svg" alt="Läs hela berättelsen"></span> <audio id="audioplayer" controls><source src="https://media.berattelser.se/audio/en/0120/en-0120_hair.mp3" type="audio/mpeg"></audio></h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Reading speed"><img class="cover-icon cover-icon-text" src="/css/speedometer.svg" alt="Reading speed" style="cursor:pointer" onclick="normalspeed()"></span> <span id="slider_tooltip" class="tooltip" data-tooltip="Reading speed: 1×"><input type="range" min="0.5" max="1.5" value="1" step="0.05" id="audio_slider" class="slider" oninput="adjustslider()"></span></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Autoplay story (beta - desktop only)"><img id="autoplay_icon" class="cover-icon cover-icon-text" src="/css/play.svg" alt="Autoplay story" style="cursor:pointer" onclick="autoplay()"></span></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Automatisk avspälning (beta - endast stationär dator)"><img id="autoplay_icon" class="cover-icon cover-icon-text" src="/css/play.svg" alt="Automatisk avspälning" style="cursor:pointer" onclick="autoplay()"></span></h3>
 	</div>
+</div>
+<div class="modal" id="modal-pdf">
+  <a href="#close" class="modal-overlay" aria-label="Stäng" onclick="pdfdl()"></a>
+  <div class="modal-container">
+    <div class="modal-header">
+      <a href="#close" class="btn btn-clear float-right" aria-label="Stäng" onclick="pdfdl()"></a>
+      <div class="modal-title h5">Val för att ladda ner</div>
+    </div>
+    <div class="modal-body">
+      <div class="content">
+        <h4>Vanlig PDFs (hel sida)</h4>
+        <ul>
+          <li><strong><a href="https://media.berattelser.se/pdf/en/en-0120_hår.pdf" target="_blank">Vanlig PDF (enspråkig)<br><center><img src="/css/editions/landscape-mono.svg" width="100"></center></a></strong></li>
+          <li><a href="https://media.berattelser.se/editions/wordless/0120_hår-wordless.pdf" target="_blank">Wordless PDF (liggande)<br><center><img src="/css/editions/landscape-wordless.svg" width="100"></center></a></li>
+          <li><a href="https://media.berattelser.se/editions/imageless/en/en-0120_hår-imageless.pdf" target="_blank">PDF utan bilder (enspråkig)<br><center><img src="/css/editions/landscape-imageless.svg" width="100"></center></a></li>
+        </ul>
+
+        <h4>Tvåspråkliga PDF:er</h4>
+        <ul>
+          <li><a href="https://media.berattelser.se/editions/bilingual/en-sv/0120_hår-bilingual_en-sv.pdf" target="_blank">Tvåspråklig PDF (engelska-svenska, landscape)<br><center><img src="/css/editions/landscape-bil1.svg" width="100"></center></a></li>
+          <li><a href="https://media.berattelser.se/editions/imageless-bilingual/en-sv/0120_hår-imageless-bilingual_en-sv.pdf" target="_blank">Tvåspråklig PDF utan bilder (engelska-svenska, liggande)<br><center><img src="/css/editions/landscape-imageless-bil1.svg" width="100"></center></a></li>
+        </ul>
+
+
+        <h4>PDF-häften (för utskrift)</h4>
+        <ul>
+          <li><a href="https://media.berattelser.se/editions/booklet/en/en-0120_hår-booklet.pdf" target="_blank">PDF-häften (enspråkig)<br><center><img src="/css/editions/booklet-mono.svg" width="100"></center></a></li>
+          <li><a href="https://media.berattelser.se/editions/bilingual-booklet/en-sv/0120_hår-bilingual_en-sv-booklet.pdf" target="_blank">Tvåspråklig PDF-häfte (engelska-svenska)<br><center><img src="/css/editions/booklet-bil1.svg" width="100"></center></a></li>
+          <li><a href="https://media.berattelser.se/editions/wordless-booklet/0120_hår-wordless-booklet.pdf" target="_blank">Häfte utan ord<br><center><img src="/css/editions/booklet-wordless.svg" width="100"></center></a></li>
+          <li><a href="https://media.berattelser.se/editions/imageless-booklet/en/en-0120_hår-imageless-booklet.pdf" target="_blank">Häfte utan bilder (enspråkig)<br><center><img src="/css/editions/booklet-imageless.svg" width="100"></center></a></li>
+          <li><a href="https://media.berattelser.se/editions/imageless-bilingual-booklet/en-sv/0120_hår-imageless-bilingual_en-sv-booklet.pdf" target="_blank">Tvåspråklig häfte utan bilder (engelska-svenska)<br><center><img src="/css/editions/booklet-imageless-bil1.svg" width="100"></center></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <a class="btn btn-primary" onclick="pdfdl()">Stäng</a>
+    </div>
+  </div>
 </div>
 
 <hr>
