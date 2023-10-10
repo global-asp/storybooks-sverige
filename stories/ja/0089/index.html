@@ -90,16 +90,19 @@
 		</h1>
 		<div class="btn-group cover-buttons">
 			<a href="#text02" class="btn btn-lg" title="Nästa sida"><i class="icon-arrow-down"></i></a>
-			<button class="btn btn-lg disabled" id="playbutton01" onclick="playpause('01')" title="Spela/paus"><i class="icon-volume-up"></i></button>
+			<button class="btn btn-lg" id="playbutton01" onclick="playpause('01')" title="Spela/paus"><i class="icon-volume-up"></i></button>
+			<audio id="audio01" onended="resetbutton('01')" src="https://media.berattelser.se/audio/ja/0089/mp3/01.mp3"></audio>
 			<button onclick="switchlang('ja,sv','sv,ja')" class="btn btn-lg lang-primary" title="Byt mellan japanska och svenska">sv</button>
 		</div>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Skriven av"><img class="cover-icon cover-icon-text" src="/css/pencil.svg" alt="Skriven av"></span> Ursula Nafula</h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Illustrerad av"><img class="cover-icon cover-icon-text" src="/css/art.svg" alt="Illustrerad av"></span> Jesse Pietersen</h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Översatt av"><img class="cover-icon cover-icon-text" src="/css/global.svg" alt="Översatt av"></span> Aiko Komatsu</h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Uppläst av"><img class="cover-icon cover-icon-text" src="/css/megaphone.svg" alt="Uppläst av"></span> Yumi Okano</h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Språk"><img class="cover-icon cover-icon-text" src="/css/language.svg" alt="Språk"></span> <a href="/stories/ja">japanska</a></h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="Nivå"><img class="cover-icon cover-icon-text" src="/css/level.svg" alt="Nivå"></span> <a href="/stories/ja/level2">Nivå 2</a></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Läs berätning"><img class="cover-icon cover-icon-text" src="/css/speaker.svg" alt="Läs hela berättelsen"></span> <span class="cover_msg">Det finns ingen ljudfil till denna berättelse ännu.</span></h3>
-
+		<h3><span class="tooltip tooltip-right" data-tooltip="Läs berätning"><img class="cover-icon cover-icon-audio" src="/css/speaker.svg" alt="Läs hela berättelsen"></span> <audio id="audioplayer" controls><source src="https://media.berattelser.se/audio/ja/0089/ja-0089_khalai.mp3" type="audio/mpeg"></audio></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Reading speed"><img class="cover-icon cover-icon-text" src="/css/speedometer.svg" alt="Reading speed" style="cursor:pointer" onclick="normalspeed()"></span> <span id="slider_tooltip" class="tooltip" data-tooltip="Reading speed: 1×"><input type="range" min="0.5" max="1.5" value="1" step="0.05" id="audio_slider" class="slider" oninput="adjustslider()"></span></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Automatisk avspälning (beta - endast stationär dator)"><img id="autoplay_icon" class="cover-icon cover-icon-text" src="/css/play.svg" alt="Automatisk avspälning" style="cursor:pointer" onclick="autoplay()"></span></h3>
 	</div>
 </div>
 <div class="modal" id="modal-pdf">
@@ -146,7 +149,7 @@
         <div id="text02" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0089/02.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3>
-	この子はカライ、７歳の女の子です。カライの名前はカライの国の言葉のブクス語で「良いもの」という意味です。
+	この子はカライ、７歳の女の子です。カライの名前は彼女の国の言葉のブクス語で「良いもの」という意味です。
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3>
@@ -157,7 +160,8 @@
 	<div class="btn-group switcher-group">
 		<a href="#text01" class="btn btn-lg" title="Tillbaka"><i class="icon-arrow-up"></i></a>
 		<a href="#text03" class="btn btn-lg" title="Nästa sida"><i class="icon-arrow-down"></i></a>
-		<button class="btn btn-lg disabled" id="playbutton02" onclick="playpause('02')" title="Spela/paus"><i class="icon-volume-up"></i></button>
+		<audio id="audio02" onended="resetbutton('02')" src="https://media.berattelser.se/audio/ja/0089/mp3/02.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton02" onclick="playpause('02')" title="Spela/paus"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
 		<button onclick="switchlang('ja,sv','sv,ja')" class="btn btn-lg lang-primary" title="Byt mellan japanska och svenska">sv</button>
@@ -170,7 +174,7 @@
 <div id="text03" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0089/03.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3>
-	カライは起きるとオレンジの木に話しかけます。「お願い、オレンジの木。大きく育って、私たちにたくさんの熟れたオレンジをちょうだいな」
+	カライは起きるとオレンジの木に話しかけます。「お願い、オレンジの木。大きく育って、私たちにたくさんの熟れたオレンジをちょうだいな。」
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3>
@@ -181,7 +185,8 @@
 	<div class="btn-group switcher-group">
 		<a href="#text02" class="btn btn-lg" title="Tillbaka"><i class="icon-arrow-up"></i></a>
 		<a href="#text04" class="btn btn-lg" title="Nästa sida"><i class="icon-arrow-down"></i></a>
-		<button class="btn btn-lg disabled" id="playbutton03" onclick="playpause('03')" title="Spela/paus"><i class="icon-volume-up"></i></button>
+		<audio id="audio03" onended="resetbutton('03')" src="https://media.berattelser.se/audio/ja/0089/mp3/03.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton03" onclick="playpause('03')" title="Spela/paus"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
 		<button onclick="switchlang('ja,sv','sv,ja')" class="btn btn-lg lang-primary" title="Byt mellan japanska och svenska">sv</button>
@@ -194,7 +199,7 @@
 <div id="text04" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0089/04.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3>
-	カライは学校まで歩いて行きます。歩きながら、カライは草に話しかけます。「お願い、草たち、もっと濃い緑になってね。カラカラに乾いたりしないでね」
+	カライは学校まで歩いて行きます。道すがら、カライは草に話しかけます。「お願い、草たち、もっと濃い緑になってね。カラカラに乾いたりしないでね。」
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3>
@@ -205,7 +210,8 @@
 	<div class="btn-group switcher-group">
 		<a href="#text03" class="btn btn-lg" title="Tillbaka"><i class="icon-arrow-up"></i></a>
 		<a href="#text05" class="btn btn-lg" title="Nästa sida"><i class="icon-arrow-down"></i></a>
-		<button class="btn btn-lg disabled" id="playbutton04" onclick="playpause('04')" title="Spela/paus"><i class="icon-volume-up"></i></button>
+		<audio id="audio04" onended="resetbutton('04')" src="https://media.berattelser.se/audio/ja/0089/mp3/04.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton04" onclick="playpause('04')" title="Spela/paus"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
 		<button onclick="switchlang('ja,sv','sv,ja')" class="btn btn-lg lang-primary" title="Byt mellan japanska och svenska">sv</button>
@@ -218,7 +224,7 @@
 <div id="text05" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0089/05.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3>
-	カライは野の花のそばを通ります。「お願い、花たち、ずっと咲いていてね。私が髪に飾れるように」
+	カライは野の花のそばを通ります。「お願い、花たち、ずっと咲いていてね。私が髪に飾れるように。」
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3>
@@ -229,7 +235,8 @@
 	<div class="btn-group switcher-group">
 		<a href="#text04" class="btn btn-lg" title="Tillbaka"><i class="icon-arrow-up"></i></a>
 		<a href="#text06" class="btn btn-lg" title="Nästa sida"><i class="icon-arrow-down"></i></a>
-		<button class="btn btn-lg disabled" id="playbutton05" onclick="playpause('05')" title="Spela/paus"><i class="icon-volume-up"></i></button>
+		<audio id="audio05" onended="resetbutton('05')" src="https://media.berattelser.se/audio/ja/0089/mp3/05.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton05" onclick="playpause('05')" title="Spela/paus"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
 		<button onclick="switchlang('ja,sv','sv,ja')" class="btn btn-lg lang-primary" title="Byt mellan japanska och svenska">sv</button>
@@ -242,7 +249,7 @@
 <div id="text06" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0089/06.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3>
-	学校では、カライは校庭の真ん中にある木に話しかけます。「お願い、樹木さん、枝を大きく広げてね。私たちが木陰で本を読めるように」
+	学校では、カライは校庭の真ん中にある木に話しかけます。「お願い、樹木さん、枝を大きく広げてね。私たちが木陰で本を読めるように。」
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3>
@@ -253,7 +260,8 @@
 	<div class="btn-group switcher-group">
 		<a href="#text05" class="btn btn-lg" title="Tillbaka"><i class="icon-arrow-up"></i></a>
 		<a href="#text07" class="btn btn-lg" title="Nästa sida"><i class="icon-arrow-down"></i></a>
-		<button class="btn btn-lg disabled" id="playbutton06" onclick="playpause('06')" title="Spela/paus"><i class="icon-volume-up"></i></button>
+		<audio id="audio06" onended="resetbutton('06')" src="https://media.berattelser.se/audio/ja/0089/mp3/06.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton06" onclick="playpause('06')" title="Spela/paus"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
 		<button onclick="switchlang('ja,sv','sv,ja')" class="btn btn-lg lang-primary" title="Byt mellan japanska och svenska">sv</button>
@@ -266,7 +274,7 @@
 <div id="text07" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0089/07.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3>
-	カライは学校の周りをめぐる生け垣にも話します。「お願い、強く育ってね。悪い人たちが中に入ってこられないように」
+	カライは学校の周りをめぐる生け垣にも話します。「お願い、強く育ってね。悪い人たちが中に入ってこられないように。」
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3>
@@ -277,7 +285,8 @@
 	<div class="btn-group switcher-group">
 		<a href="#text06" class="btn btn-lg" title="Tillbaka"><i class="icon-arrow-up"></i></a>
 		<a href="#text08" class="btn btn-lg" title="Nästa sida"><i class="icon-arrow-down"></i></a>
-		<button class="btn btn-lg disabled" id="playbutton07" onclick="playpause('07')" title="Spela/paus"><i class="icon-volume-up"></i></button>
+		<audio id="audio07" onended="resetbutton('07')" src="https://media.berattelser.se/audio/ja/0089/mp3/07.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton07" onclick="playpause('07')" title="Spela/paus"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
 		<button onclick="switchlang('ja,sv','sv,ja')" class="btn btn-lg lang-primary" title="Byt mellan japanska och svenska">sv</button>
@@ -290,7 +299,7 @@
 <div id="text08" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://media.berattelser.se/images/0089/08.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3>
-	カライは学校から家に帰ると、オレンジの木のところへ行き訪ねます。「オレンジの木さん、あなたの実は熟れたかしら？」とカライは尋ねます。
+	カライは学校から家に帰ると、オレンジの木のところへ行きたずねます。「オレンジの木さん、あなたの実は熟れたかしら？」
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3>
@@ -301,7 +310,8 @@
 	<div class="btn-group switcher-group">
 		<a href="#text07" class="btn btn-lg" title="Tillbaka"><i class="icon-arrow-up"></i></a>
 		<a href="#text09" class="btn btn-lg" title="Nästa sida"><i class="icon-arrow-down"></i></a>
-		<button class="btn btn-lg disabled" id="playbutton08" onclick="playpause('08')" title="Spela/paus"><i class="icon-volume-up"></i></button>
+		<audio id="audio08" onended="resetbutton('08')" src="https://media.berattelser.se/audio/ja/0089/mp3/08.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton08" onclick="playpause('08')" title="Spela/paus"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
 		<button onclick="switchlang('ja,sv','sv,ja')" class="btn btn-lg lang-primary" title="Byt mellan japanska och svenska">sv</button>
@@ -325,7 +335,8 @@
 	<div class="btn-group switcher-group">
 		<a href="#text08" class="btn btn-lg" title="Tillbaka"><i class="icon-arrow-up"></i></a>
 		<a href="#colophon" class="btn btn-lg" title="Erkännanden"><i class="icon-arrow-down"></i></a>
-		<button class="btn btn-lg disabled" id="playbutton09" onclick="playpause('09')" title="Spela/paus"><i class="icon-volume-up"></i></button>
+		<audio id="audio09" onended="resetbutton('09')" src="https://media.berattelser.se/audio/ja/0089/mp3/09.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton09" onclick="playpause('09')" title="Spela/paus"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
 		<button onclick="switchlang('ja,sv','sv,ja')" class="btn btn-lg lang-primary" title="Byt mellan japanska och svenska">sv</button>
@@ -341,6 +352,7 @@
 		<h5><span class="colophon-heading">Skriven av:</span> Ursula Nafula</h5>
 		<h5><span class="colophon-heading">Illustrerad av:</span> Jesse Pietersen</h5>
 		<h5><span class="colophon-heading">Översatt av:</span> Aiko Komatsu</h5>
+		<h5><span class="colophon-heading">Uppläst av:</span> Yumi Okano</h5>
 		<h5><span class="colophon-heading">Språk:</span> <a href="/stories/ja">japanska</a></h5>
 		<h5><span class="colophon-heading">Nivå:</span> <a href="/stories/ja/level2">Nivå 2</a></h5>
 		<h5><span class="colophon-heading">Källa:</span> <a href="https://africanstorybook.org/reader.php?id=13545" target="_blank">Khalai talks to plants</a> från <a href="https://africanstorybook.org/">African Storybook-projektet</a></h5>
@@ -358,8 +370,8 @@
 			<label class="chip"><a href="/stories/ja/0210/">ティンギと牛たち</a></label>
 			<label class="chip"><a href="/stories/ja/0342/">お仕置き</a></label>
 			<label class="chip"><a href="/stories/ja/0004/">ヤギと犬と牛</a></label>
-			<label class="chip"><a href="/stories/ja/0234/">アンディスワはサッカースター</a></label>
-			<label class="chip"><a href="/stories/ja/0001/">とても背が高い男がいた</a></label>
+			<label class="chip"><a href="/stories/ja/0234/">サッカースターのアンディスワ</a></label>
+			<label class="chip"><a href="/stories/ja/0001/">とても背の高い男がいた</a></label>
 	</div>
 </div>
 <div>
